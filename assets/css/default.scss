@@ -81,7 +81,7 @@ a {
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
-    color: $rg-color-site;
+    color: $rg-text-color;
     text-decoration: none;
     &:hover, &:focus {
         color: $rg-color-site;
@@ -91,6 +91,26 @@ a {
         &.color-text{
             color: $rg-text-color;
             text-decoration: underline;
+        }
+    }
+    .link-decor {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        padding-bottom: 4px;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 0%;
+            height: 1px;
+            background-color: #FFFF00;
+            left: 50%;
+            bottom: 0;
+            transition: all 0.4s ease-in-out;
+        }
+        &:hover::after {
+            width: 100%;
+            left: 0;
         }
     }
 }
@@ -174,7 +194,7 @@ ul, .wp-block-navigation.is-vertical{
         &.check-img{
             >li {
                 &::before {
-                    background: url(../img/check-list.svg) no-repeat 50% / contain;
+                    //background: url(../img/check-list.svg) no-repeat 50% / contain;
                     width: 18px;
                     height: 18px;
                     top: 3px;
@@ -273,7 +293,7 @@ ol{
             line-height: 26px;
             padding: 0;
             color: #fff;
-            background: $rg-gradient-site;
+            //background: $rg-gradient-site;
             font-weight: bold;
             text-align: center;
             border-radius: 25px;
@@ -345,34 +365,6 @@ section, .section {
     background: none!important;
 }
 
-
-/**********************************
-* links decor
-**********************************/
-
-.link-decor {
-    display: block;
-    position: relative;
-    text-decoration: none;
-    padding-bottom: 4px;
-}
-
-.link-decor::after {
-    position: absolute;
-	content: "";
-	width: 0%;
-	height: 1px;
-	background-color: #FFFF00;
-	left: 50%;
-	bottom: 0;
-	transition: all 0.4s ease-in-out;
-}
-
-.link-decor:hover::after {
-    width: 100%;
-	left: 0;
-}
-
 /**********************************
 * Header
 **********************************/
@@ -387,7 +379,7 @@ section, .section {
         .navbar {
             &-nav {
                 .nav-link {
-                    color: $rg-color-site;
+                    color: $rg-text-color;
                 }
                 // .nav-item:not(:last-child) {
                 //     margin-right: 72px;

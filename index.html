@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/min/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/min/css/bootstrap.min.css">
     <title>Juventud WEB</title>
-    <link rel="stylesheet" href="./assets/min/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/min/css/style.min.css">
 </head>
 <body>
     <header class="header-page header">
@@ -14,7 +15,7 @@
             <div class="row align-items-center pt-4">
                 <div class="page__start col-2 d-flex justify-content-start">
                     <div class="page__start-logo">
-                        <img class="page__start-logo-img" src="./img/svg/logo.svg" alt="logo">
+                        <img class="page__start-logo-img" src="assets/img/svg/logo.svg" alt="logo">
                     </div>
                 </div>
                 <div class="page__center col-8 d-flex justify-content-center">
@@ -43,7 +44,7 @@
                     </nav>
                 </div>
                 <div class="page__end col-2 d-flex justify-content-end">
-                    <object class="page__end-img" data="./img/svg/phone.svg" type="image/svg+xml">
+                    <object class="page__end-img" data="assets/img/svg/phone.svg" type="image/svg+xml">
                         <p>Если не работает SVG</p>
                     </object>
                     <a class="page__end-link" href="tel:84952258118">
@@ -54,24 +55,42 @@
         </div>
     </header>
 
-    <section class="page-home promo">
-        <div class="container promo__container">
+    <section class="page-home promo p-0">
+        <div class="container">
             <div class="row">
-                <div class="promo__info col-6 p-0">
-                    <h1 class="promo__info-title m-0 mb-4 p-0 text-start">Создаем и продвигаем сайты по всей России</h1>
-                    <h3 class="promo__info-subtitle text-start">Сайты для бизнеса и личного пользования</h3>
-                    <div class="promo__info-btns col-6 mb-5">
-                        <a class="promo__info-link" href="#">Узнать стоимость</a>
-                        <a class="promo__info-link" href="#">Заказать редизайн</a>
+                <div class="info col-lg-8">
+                    <h1 class="m-0 mb-4 p-0 text-start">Создаем и продвигаем сайты по всей России</h1>
+                    <p class="subtitle text-start">Сайты для бизнеса и личного пользования</p>
+                    <div class="items d-flex flex-wrap justify-content-start align-items-center">
+                    	<div class="item me-3 mb-sm-3 mb-xl-0 mb-2">
+                    		<p class="mb-0">
+                    			<a class="btn" href="">Узнать стоимость</a>
+                    		</p>
+                    	</div>
+                    	<div class="item">
+                    		<p class="mb-0">
+                    			<a class="btn link" data-where="" href="javascript:;">Заказать редизайн</a>
+                    		</p>
+                    	</div>
                     </div>
-                    <ul class="promo__info-list d-flex flex-wrap justify-content-between mt-5">
-                        <li class="promo__info-item">Создание сайта</li>
-                        <li class="promo__info-item">Поддержка сайта</li>
-                        <li class="promo__info-item">Продвижение сайта</li>
+
+                    <ul class="list d-flex flex-wrap justify-content-between mt-5">
+                        <li class="item">Создание сайта</li>
+                        <li class="item">Поддержка сайта</li>
+                        <li class="item">Продвижение сайта</li>
                     </ul>
-                </div>
-                <div class="promo__decor col-6">
-                    <img class="promo__decor-img" src="./img/girl.png" alt="girl">
+
+                    <div class="items d-flex flex-wrap justify-content-between mt-5">
+                        <div class="item">
+                            <p><a href="#">Создание сайта</a></p>
+                        </div>
+                        <div class="item">
+                            <p><a href="#">Поддержка сайта</a></p>
+                        </div>
+                        <div class="item">
+                            <p><a href="#">Продвижение сайта</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="line"></div>
@@ -82,19 +101,19 @@
         <div class="container team__container">
             <div class="row">
                 <div class="team__info col-6">
-                    <h2 class="team__info-title title text-start text-uppercase">Команда Juventud</h2>
-                    <p class="team__info-text text text-start">Наша команда juventud занимается созданием и поддержкой сайтов Вашей мечты. Чтобы рассказать о своем бизнесе, завоевать доверие клиентов или продавать товар или услугу, необходима страница в сети Интернет. Независимо от того, находится компания на стартовом пути или уже успела стать узнаваемой на рынке, собственный сайт поможет увеличить продажи, а также организовать оперативную поддержку для клиентов.
+                    <h2 class="team__title title text-start text-uppercase">Команда Juventud</h2>
+                    <p class="team__text text text-start">Наша команда juventud занимается созданием и поддержкой сайтов Вашей мечты. Чтобы рассказать о своем бизнесе, завоевать доверие клиентов или продавать товар или услугу, необходима страница в сети Интернет. Независимо от того, находится компания на стартовом пути или уже успела стать узнаваемой на рынке, собственный сайт поможет увеличить продажи, а также организовать оперативную поддержку для клиентов.
                     </p>
-                    <div class="team__info-prof d-flex justify-content-between flex-wrap">
-                        <a class="team__info-link link-decor" href="#">Маркетолог</a>
-                        <a class="team__info-link link-decor" href="#">Дизайнер</a>
-                        <a class="team__info-link link-decor" href="#">SEO</a>
-                        <a class="team__info-link link-decor" href="#">Программист</a>
+                    <div class="team__prof d-flex justify-content-between flex-wrap">
+                        <a class="team__link link-decor" href="#">Маркетолог</a>
+                        <a class="team__link link-decor" href="#">Дизайнер</a>
+                        <a class="team__link link-decor" href="#">SEO</a>
+                        <a class="team__link link-decor" href="#">Программист</a>
                     </div>
                 </div>
                 <div class="team__photos col-6">
                     <div class="team__photos-person">
-                        <img class="team__photos-img" src="./img/team.jpg" alt="person">
+                        <img class="team__photos-img" src="assets/img/team.jpg" alt="person">
                         <p class="team__photos-label">Иван Иванов</p>
                     </div>
                     <div class="photos-array"></div>
@@ -108,8 +127,8 @@
         <div class="container">
             <div class="info">
                 <div class="row">
-                    <h2 class="portfolio__info-title title col-6 text-start text-uppercase">Наши работы</h2>
-                    <p class="portfolio__info-text text col-6 text-start mb-5">Мы любим проекты, которые не перестают развиваться и требуют постоянного внимания как с нашей стороны, так и со стороны клиента. Мы готовы взяться за любое техническое задание, будь то высоконагруженный интернет-магазин, CRM-система или уникальный веб-сервис.</p>
+                    <h2 class="portfolio__title title col-6 text-start text-uppercase">Наши работы</h2>
+                    <p class="portfolio__text text col-6 text-start mb-5">Мы любим проекты, которые не перестают развиваться и требуют постоянного внимания как с нашей стороны, так и со стороны клиента. Мы готовы взяться за любое техническое задание, будь то высоконагруженный интернет-магазин, CRM-система или уникальный веб-сервис.</p>
                 </div>
             </div>
             <div class="portfolio__slider">
@@ -118,17 +137,17 @@
                         <li class="portfolio__slider-item col-4">
                             <h3 class="portfolio__slider-title text-start">Аредна автобуса на праздник</h3>
                             <p class="portfolio__slider-text text-start">2021</p>
-                            <img class="portfolio__slider-img" src="./img/work-1.jpg" alt="landing-page">
+                            <img class="portfolio__slider-img" src="assets/img/work-1.jpg" alt="landing-page">
                         </li>
                         <li class="portfolio__slider-item col-4">
                             <h3 class="portfolio__slider-title text-start">Отель в горах Архыз</h3>
                             <p class="portfolio__slider-text text-start">2021</p>
-                            <img class="portfolio__slider-img" src="./img/work-2.jpg" alt="landing-page">
+                            <img class="portfolio__slider-img" src="assets/img/work-2.jpg" alt="landing-page">
                         </li>
                         <li class="portfolio__slider-item col-4">
                             <h3 class="portfolio__slider-title text-start">Выпечка на любой случай</h3>
                             <p class="portfolio__slider-text text-start">2021</p>
-                            <img class="portfolio__slider-img" src="./img/work-3.jpg" alt="landing-page">
+                            <img class="portfolio__slider-img" src="assets/img/work-3.jpg" alt="landing-page">
                         </li>
                     </div>
                 </ul>
@@ -141,8 +160,8 @@
     <section class="page-home mackets">
         <div class="container mackets__container">
             <div class="row">
-                <h2 class="mackets__info-title title col-6 text-start text-uppercase">Макеты</h2>
-                <p class="mackets__info-text text col-6 text-start mb-5">Сайт в сети интернет дает возможность создать витрину продаваемых товаров на экране, рассказать потенциальным клиентам о компании, о новинках в выбранной сфере, а также при необходимости быстро связаться для решения возникающих вопросов.</p>
+                <h2 class="mackets__title title col-6 text-start text-uppercase">Макеты</h2>
+                <p class="mackets__text text col-6 text-start mb-5">Сайт в сети интернет дает возможность создать витрину продаваемых товаров на экране, рассказать потенциальным клиентам о компании, о новинках в выбранной сфере, а также при необходимости быстро связаться для решения возникающих вопросов.</p>
             </div>
             <div class="mackets-wrapper">
                 <div class="mackets__category col-9 d-flex justify-content-between mb-5">
@@ -194,7 +213,7 @@
                             </div>
                         </div>
                         <div class="mackets__promo col-6">
-                            <img class="mackets__promo-img" src="./img/landing.jpg" alt="promo">
+                            <img class="mackets__promo-img" src="assets/img/landing.jpg" alt="promo">
                             <div class="mackets__promo-link">
                                 <a class="mackets__btn" href="#">Выбрать макет</a>
                             </div>
@@ -210,8 +229,8 @@
         <div class="container price__container">
             <div class="price__info">
                 <div class="row">
-                    <h2 class="price__info-title title col-6">Цены </h2>
-                    <p class="price__info-text text col-6">Большинство проектов не поддаются усредненной оценке, поэтому чтобы определить точную цену создания сайта и срок реализации, необходимо связаться с нами для выяснения всех подробностей.</p>
+                    <h2 class="price__title title col-6">Цены </h2>
+                    <p class="price__text text col-6">Большинство проектов не поддаются усредненной оценке, поэтому чтобы определить точную цену создания сайта и срок реализации, необходимо связаться с нами для выяснения всех подробностей.</p>
                 </div>
             </div>
             <ul class="price__card-list">
@@ -400,8 +419,8 @@
                     </div>
                 </div>
                 <div class="work__wrapper-info">
-                    <p class="work__info-text text">Мы предлагаем полный пакет услуг, начиная с разработки бизнес-идеи и заканчивая ведением сайта. Для нас важен долгосрочный результат и постоянный рост.</p>
-                    <img class="work__info-img" src="./img/work.jpg" alt="at work">
+                    <p class="work__text text">Мы предлагаем полный пакет услуг, начиная с разработки бизнес-идеи и заканчивая ведением сайта. Для нас важен долгосрочный результат и постоянный рост.</p>
+                    <img class="work__img" src="assets/img/work.jpg" alt="at work">
                 </div>
             </div>
             <div class="line work"></div>
@@ -428,18 +447,18 @@
         <div class="container footer__container">
             <div class="footer__info">
                 <div class="footer__logo">
-                    <img class="logo__img" src="./img/svg/logo.svg" alt="logo">
+                    <img class="logo__img" src="assets/img/svg/logo.svg" alt="logo">
                 </div>
                 <p class="footer__text">Создаем Сайты мечты</p>
                 <div class="footer__social">
                     <a class="footer__social-link" href="#">
-                        <img class="footer__social-img" src="./img/svg/behance.svg" alt="behance">
+                        <img class="footer__social-img" src="assets/img/svg/behance.svg" alt="behance">
                     </a>
                     <a class="footer__social-link" href="#">
-                        <img class="footer__social-img" src="./img/svg/vk.svg" alt="vk">
+                        <img class="footer__social-img" src="assets/img/svg/vk.svg" alt="vk">
                     </a>
                     <a class="footer__social-link" href="#">
-                        <img class="footer__social-img" src="./img/svg/instagram.svg" alt="instagram">
+                        <img class="footer__social-img" src="assets/img/svg/instagram.svg" alt="instagram">
                     </a>
                 </div>
             </div>

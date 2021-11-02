@@ -2,39 +2,22 @@
 @media all and (max-width: 1399px) {
   /* Контент */
   .page-home {
-    &.section_3 {
-      .row {
-        min-height: 300px;
+    &.promo {
+      > .container {
+        background: url(../img/girl.png) no-repeat 100% 50%/435px;
       }
     }
-  }
-  #tariffs {
-    .tariffs-container {
-      .item {
-        max-width: 360px;
-      }
-    }
-  }
-}
-@media all and (min-width: 1201px) and (max-width: 1399px) {
-  /* Контент */
-  .page-home{
-
   }
 }
 @media all and (max-width: 1200px) {
-  #top-menu .top-line .items_top-line > .item {
-    max-width: 217px;
-  }
-  /* Контент */
   .page-home {
-
-  }
-}
-@media all and (min-width: 992px) and (max-width: 1200px) {
-  /* Контент */
-  .page-home {
-
+    &.promo {
+      .info{
+        h1{
+          font-size: 2.5rem;
+        }
+      }
+    }
   }
 }
 @media all and (max-width: 991px) {
@@ -85,12 +68,6 @@
     }
   }
 }
-@media all and (min-width: 767px) and (max-width: 991px) {
-  .page-home {
-
-  }
-}
-
 @media all and (max-width: 767px){
   html body, .btn{
     font-size: 16px;
@@ -181,11 +158,6 @@
     max-width: max-content;
   }
 }
-
-
-
 @media all and (min-width: 320px) and (max-width: 488px) {
-  .page-home {
 
-  }
 }

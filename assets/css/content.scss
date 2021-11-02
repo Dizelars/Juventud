@@ -11,14 +11,24 @@
 /******************************
 * Главная страница (/)
 ******************************/
-
+.блок{
+  background: red;
+}
 .page-home {
   &.promo{
-    &__info-title {
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-weight: 600;
-      font-size: 36px;
-      text-transform: uppercase;
+    >.container{
+      background: url(../img/girl.png) no-repeat 100% 50%/contain;
+      padding: 100px 0;
+    }
+    .info{
+      h1{
+        font:3.1111rem $rg-font-style-bold;
+        text-transform: uppercase;
+      }
+      .subtitle{
+        font: 1.3333rem $rg-font-style-semi-bold;
+
+      }
     }
   }
 }

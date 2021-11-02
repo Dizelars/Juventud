@@ -5,9 +5,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../css/default.scss'
-import '../css/modules.scss'
+//import '../css/modules.scss'
 import '../css/content.scss'
 import '../css/mobile.scss'
-import '../css/fonts.css'
 
 //import * as $ from 'jquery'

@@ -102,6 +102,9 @@ module.exports = {
     ]
   },
   devtool: isDev ? 'source-map' : false,
+  devServer: {
+    port: 4200
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: (pathData) => {
