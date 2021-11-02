@@ -1,0 +1,121 @@
+/******************************
+* Кнопка
+* Тень
+* Блок с тенью
+* Текст градиент
+******************************/
+@import "_variables";
+/******************************
+* Кнопка
+******************************/
+@mixin default-btn {
+  font-family: $rg-font-style-regular;
+  position: relative;
+  padding: 10px 20px;
+  border: 2px solid $rg-color-site;
+  border-radius: 50px;
+  color: white;
+  background: $rg-color-site;
+  background-size: 200%;
+  transition: .5s;
+  white-space: nowrap;
+  box-shadow: 0 6px 7px rgb(77 144 104 / 40%);
+  &:focus,&:active{
+    box-shadow: none;
+    color: white;
+  }
+  &:hover{
+    background: white;
+    color: $rg-color-site;
+  }
+  &.white{
+    background: white;
+    color: $rg-color-site;
+    &:hover{
+      background: $rg-color-site;
+      color: white;
+    }
+  }
+  &.yellow{
+    background: #FFD24D;
+    border: 2px solid #FFD24D;
+    color: $rg-text-color;
+    box-shadow: 0 6px 7px rgba(255, 210, 77, 0.4);
+    &:hover{
+      background: white;
+    }
+  }
+  &.link{
+    background: transparent;
+    border: none;
+    padding: 13px 0;
+    display: inline-flex;
+    align-items: center;
+    color: $rg-text-color;
+    box-shadow: none;
+    &:hover{
+      color: $rg-color-site;
+    }
+    .arrow{
+      position: relative;
+      width: 30px;
+      height: 2px;
+      border-radius: 5px;
+      margin-left: 15px;
+      background: $rg-color-site;
+      &:before,&:after{
+        content: "";
+        position: absolute;
+        top: -3px;
+        right: -2px;
+        height: 2px;
+        width: 10px;
+        border-radius: 5px;
+        transform: rotate(45deg);
+        background: $rg-color-site;
+      }
+      &:after{
+        transform: rotate(-45deg);
+        bottom: -3px;
+        top: auto;
+      }
+    }
+
+  }
+  &.big{
+    padding: 1.25rem 3.125rem;
+    font-size: 1.25rem;
+  }
+}
+/******************************
+* Тень
+******************************/
+@mixin default-shadow {
+  transition: .5s;
+  border-radius: 10px;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+/******************************
+* Блок с тенью
+******************************/
+@mixin shadow-box {
+  width: 100%;
+  padding: 30px 15px;
+  position: relative;
+  margin-bottom: 50px;
+  background: white;
+  @include default-shadow;
+}
+/******************************
+* Текст градиент
+******************************/
+@mixin rg-text-gradient{
+  background: #26ad50;
+  background: -webkit-linear-gradient(to right, #236446 0%, #26ad50 100%);
+  background: -moz-linear-gradient(to right, #236446 0%, #26ad50 100%);
+  background: linear-gradient(to right, #236446 0%, #26ad50 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
+  margin: 0 auto;
+}
