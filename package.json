@@ -10,7 +10,7 @@
     "clean": "rm -r assets/min",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "prod": "cross-env NODE_ENV=production webpack --mode production",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development --open"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",

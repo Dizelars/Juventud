@@ -103,7 +103,11 @@ module.exports = {
   },
   devtool: isDev ? 'source-map' : false,
   devServer: {
-    port: 4200
+    static: {
+      directory: path.join(__dirname, '/'),
+    },
+    compress: true,
+    port: 9000,
   },
   plugins: [
     new MiniCssExtractPlugin({

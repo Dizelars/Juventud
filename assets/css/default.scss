@@ -93,7 +93,7 @@ a {
             text-decoration: underline;
         }
     }
-    .link-decor {
+    &.link-decor {
         display: block;
         position: relative;
         text-decoration: none;
@@ -101,16 +101,18 @@ a {
         &:after {
             position: absolute;
             content: "";
-            width: 0%;
+            width: 0;
             height: 1px;
             background-color: #FFFF00;
             left: 50%;
             bottom: 0;
             transition: all 0.4s ease-in-out;
         }
-        &:hover::after {
-            width: 100%;
-            left: 0;
+        &:hover{
+            &:after {
+                width: 100%;
+                left: 0;
+            }
         }
     }
 }
