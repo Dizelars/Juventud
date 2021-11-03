@@ -1,10 +1,21 @@
 @import "fragment/_variables";
 @media all and (max-width: 1399px) {
   /* Контент */
+
+  .header {
+    .page__center {
+      .collapse {
+        .nav-item:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
   .page-home {
     &.promo {
       > .container {
-        background: url(../img/girl.png) no-repeat 100% 50%/435px;
+        background: url(../img/girl.png) no-repeat 100% 20%/500px;
       }
     }
   }

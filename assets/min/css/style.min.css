@@ -757,6 +757,8 @@ template {
 *  -Табы
 *  -Новости
 *  -Комментарии
+*  -Line
+*  -Array
 * Footer
 ******************************/
 /******************************
@@ -1089,7 +1091,7 @@ ol > li li:after {
 }
 
 section, .section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 section.pb-50, .section.pb-50 {
   padding-bottom: 50px;
@@ -1149,11 +1151,18 @@ section.pb-50, .section.pb-50 {
 /**********************************
 * Header
 **********************************/
+.header {
+  margin-bottom: 100px;
+}
 .header .page__start-logo-img {
   max-height: 65px;
 }
-.header .page__center .navbar-nav .nav-link {
+.header .page__center .collapse .nav-link {
   color: white;
+  text-align: center;
+}
+.header .page__center .collapse .nav-item:not(:last-child) {
+  margin-right: 72px;
 }
 .header .page__end-img {
   margin-right: 8px;
@@ -1609,6 +1618,46 @@ form.search-form button {
 }
 
 /**********************************
+* Line
+**********************************/
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #FFFF00;
+  margin-top: 100px;
+}
+
+/**********************************
+* Array
+**********************************/
+.array {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #FFFF00;
+  border-radius: 50%;
+  margin-left: auto;
+}
+.array::after {
+  content: "";
+  position: absolute;
+  background: url(../img/array-2e5aac3cd3fa4b4afac0.svg);
+  width: 32px;
+  height: 24px;
+  top: 15px;
+  right: 19px;
+}
+.array::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  bottom: 23px;
+  left: -15px;
+}
+
+/**********************************
 * Footer
 **********************************/
 footer.footer {
@@ -1702,20 +1751,93 @@ footer.footer .copyright img {
 /******************************
 * Главная страница (/)
 ******************************/
-.блок {
-  background: red;
+.page-home.promo {
+  padding-top: 0;
 }
-
 .page-home.promo > .container {
-  background: url(../img/girl-d1306333384c359ae020.png) no-repeat 100% 50%/contain;
-  padding: 100px 0;
+  background: url(../img/girl-d1306333384c359ae020.png) no-repeat 100% 10%/710px;
 }
 .page-home.promo .info h1 {
   font: 3.1111rem "IBM Plex Sans 700", sans-serif;
   text-transform: uppercase;
+  margin-bottom: 48px;
 }
 .page-home.promo .info .subtitle {
   font: 1.3333rem "IBM Plex Sans 600", sans-serif;
+  margin-bottom: 96px;
+}
+.page-home.promo .info .items {
+  margin-bottom: 140px;
+}
+.page-home.promo .info .items .btn {
+  font: 1rem "IBM Plex Sans 500", sans-serif;
+  color: #2D2D2D;
+  border-radius: 6px;
+}
+.page-home.promo .info .items .link {
+  font: 0.889rem "IBM Plex Sans 500", sans-serif;
+  color: #fff;
+  border-radius: 6px;
+  border: 2px solid #FFFF00;
+  transition: all 0.4s ease-in-out;
+}
+.page-home.promo .info .items .link:hover {
+  color: #FFFF00;
+  border-color: #fff;
+}
+.page-home.promo .info .list {
+  max-width: 700px;
+  margin-bottom: 100px;
+}
+.page-home.promo .info .list .item {
+  font: 1.333rem "IBM Plex Sans 500", sans-serif;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.page-home.promo .info .list .item::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #FFFF00;
+  top: -18px;
+  left: -14px;
+}
+.page-home.promo .info .list .item:hover::before {
+  border: 1px solid #fff;
+}
+.page-home.team .info .title {
+  font: 2rem "IBM Plex Sans 600", sans-serif;
+}
+.page-home.team .info .text {
+  font: 1rem "IBM Plex Sans 400", sans-serif;
+  margin-bottom: 100px;
+}
+.page-home.team .info .prof {
+  max-width: 520px;
+}
+.page-home.team .info .prof .link {
+  font: 1rem "IBM Plex Sans 500", sans-serif;
+  color: #717171;
+  transition: all 0.4s ease-in-out;
+}
+.page-home.team .info .prof .link:hover {
+  color: inherit;
+}
+.page-home.team .photos-person {
+  position: relative;
+  margin-bottom: 48px;
+}
+.page-home.team .photos-person img {
+  border-radius: 6px;
+}
+.page-home.team .photos-person .label {
+  font: 1.333rem "IBM Plex Sans 500", sans-serif;
+  position: absolute;
+  bottom: 5px;
+  left: 28px;
 }
 
 /******************************
@@ -1727,8 +1849,12 @@ footer.footer .copyright img {
 @charset "UTF-8";
 @media all and (max-width: 1399px) {
   /* Контент */
+  .header .page__center .collapse .nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
   .page-home.promo > .container {
-    background: url(../img/girl-d1306333384c359ae020.png) no-repeat 100% 50%/435px;
+    background: url(../img/girl-d1306333384c359ae020.png) no-repeat 100% 20%/500px;
   }
 }
 @media all and (max-width: 1200px) {

@@ -13,13 +13,13 @@
     <header class="header-page header">
         <div class="container">
             <div class="row align-items-center pt-4">
-                <div class="page__start col-2 d-flex justify-content-start">
+                <div class="page__start col-md-2 col-lg-3 d-flex justify-content-start">
                     <div class="page__start-logo">
                         <img class="page__start-logo-img" src="assets/img/svg/logo.svg" alt="logo">
                     </div>
                 </div>
-                <div class="page__center col-8 d-flex justify-content-center">
-                    <nav class="navbar navbar-expand-lg navbar-black bg-transparent">
+                <div class="page__center col-md-8 col-lg-6 d-flex justify-content-center">
+                    <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
                         <div class="container-fluid">
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
@@ -43,7 +43,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="page__end col-2 d-flex justify-content-end">
+                <div class="page__end col-md-2 col-lg-3 d-flex justify-content-end">
                     <object class="page__end-img" data="assets/img/svg/phone.svg" type="image/svg+xml">
                         <p>Если не работает SVG</p>
                     </object>
@@ -55,32 +55,38 @@
         </div>
     </header>
 
-    <section class="page-home promo p-0">
+    <section class="page-home promo">
         <div class="container">
             <div class="row">
                 <div class="info col-lg-8">
-                    <h1 class="m-0 mb-4 p-0 text-start">Создаем и продвигаем сайты по всей России</h1>
+                    <h1 class="m-0 text-start">Создаем и продвигаем сайты по всей России</h1>
                     <p class="subtitle text-start">Сайты для бизнеса и личного пользования</p>
                     <div class="items d-flex flex-wrap justify-content-start align-items-center">
-                    	<div class="item me-3 mb-sm-3 mb-xl-0 mb-2">
-                    		<p class="mb-0">
-                    			<a class="btn" href="">Узнать стоимость</a>
-                    		</p>
-                    	</div>
+                        <div class="item me-3 mb-sm-3 mb-xl-0 mb-2">
+                    	    <p class="mb-0">
+                    		    <a class="btn px-4 py-2" href="">Узнать стоимость</a>
+                    	    </p>
+                        </div>
                     	<div class="item">
                     		<p class="mb-0">
-                    			<a class="btn link" data-where="" href="javascript:;">Заказать редизайн</a>
+                    			<a class="btn link px-4 py-2" data-where="" href="javascript:;">Заказать редизайн</a>
                     		</p>
                     	</div>
                     </div>
 
-                    <ul class="list d-flex flex-wrap justify-content-between mt-5">
-                        <li class="item">Создание сайта</li>
-                        <li class="item">Поддержка сайта</li>
-                        <li class="item">Продвижение сайта</li>
+                    <ul class="list d-flex flex-wrap justify-content-around">
+                        <li class="item">
+                            <a href="#">Создание сайта</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">Поддержка сайта</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">Продвижение сайта</a>
+                        </li>
                     </ul>
 
-                    <div class="items d-flex flex-wrap justify-content-between mt-5">
+                    <!-- <div class="items d-flex flex-wrap justify-content-between mt-5">
                         <div class="item">
                             <p><a href="#">Создание сайта</a></p>
                         </div>
@@ -90,7 +96,7 @@
                         <div class="item">
                             <p><a href="#">Продвижение сайта</a></p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="line"></div>
@@ -98,25 +104,25 @@
     </section>
 
     <section class="page-home team">
-        <div class="container team__container">
+        <div class="container">
             <div class="row">
-                <div class="team__info col-6">
-                    <h2 class="team__title title text-start text-uppercase">Команда Juventud</h2>
-                    <p class="team__text text text-start">Наша команда juventud занимается созданием и поддержкой сайтов Вашей мечты. Чтобы рассказать о своем бизнесе, завоевать доверие клиентов или продавать товар или услугу, необходима страница в сети Интернет. Независимо от того, находится компания на стартовом пути или уже успела стать узнаваемой на рынке, собственный сайт поможет увеличить продажи, а также организовать оперативную поддержку для клиентов.
+                <div class="info col-md-6">
+                    <h2 class="title text-start text-uppercase">Команда Juventud</h2>
+                    <p class="text text-start">Наша команда juventud занимается созданием и поддержкой сайтов Вашей мечты. Чтобы рассказать о своем бизнесе, завоевать доверие клиентов или продавать товар или услугу, необходима страница в сети Интернет. Независимо от того, находится компания на стартовом пути или уже успела стать узнаваемой на рынке, собственный сайт поможет увеличить продажи, а также организовать оперативную поддержку для клиентов.
                     </p>
-                    <div class="team__prof d-flex justify-content-between flex-wrap">
-                        <a class="team__link link-decor" href="#">Маркетолог</a>
-                        <a class="team__link link-decor" href="#">Дизайнер</a>
-                        <a class="team__link link-decor" href="#">SEO</a>
-                        <a class="team__link link-decor" href="#">Программист</a>
+                    <div class="prof d-flex justify-content-between flex-wrap">
+                        <a class="link link-decor" href="#">Маркетолог</a>
+                        <a class="link link-decor" href="#">Дизайнер</a>
+                        <a class="link link-decor" href="#">SEO</a>
+                        <a class="link link-decor" href="#">Программист</a>
                     </div>
                 </div>
-                <div class="team__photos col-6">
-                    <div class="team__photos-person">
-                        <img class="team__photos-img" src="assets/img/team.jpg" alt="person">
-                        <p class="team__photos-label">Иван Иванов</p>
+                <div class="photos col-md-6">
+                    <div class="photos-person">
+                        <img src="assets/img/team.jpg" alt="person">
+                        <p class="label">Иван Иванов</p>
                     </div>
-                    <div class="photos-array"></div>
+                    <div class="array"></div>
                 </div>
             </div>
             <div class="line"></div>

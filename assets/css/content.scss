@@ -11,23 +11,100 @@
 /******************************
 * Главная страница (/)
 ******************************/
-.блок{
-  background: red;
-}
 .page-home {
   &.promo{
+    padding-top: 0;
     >.container{
-      background: url(../img/girl.png) no-repeat 100% 50%/contain;
-      padding: 100px 0;
+      background: url(../img/girl.png) no-repeat 100% 10%/710px;
     }
     .info{
       h1{
         font:3.1111rem $rg-font-style-bold;
         text-transform: uppercase;
+        margin-bottom: 48px;
       }
       .subtitle{
         font: 1.3333rem $rg-font-style-semi-bold;
-
+        margin-bottom: 96px;
+      }
+      .items {
+        margin-bottom: 140px;
+        .btn {
+          font: 1rem $rg-font-style-regular;
+          color: #2D2D2D;
+          border-radius: 6px;
+        }
+        .link {
+          font: 0.889rem $rg-font-style-regular;
+          color: #fff;
+          border-radius: 6px;
+          border: 2px solid $rg-color-site;
+          transition: all 0.4s ease-in-out;
+          &:hover {
+            color: $rg-color-site;
+            border-color: #fff;
+          }
+        }
+      }
+      .list {
+        max-width: 700px;
+        margin-bottom: 100px;
+        .item {
+          font: 1.333rem $rg-font-style-regular;
+          position: relative;
+          transition: all 0.4s ease-in-out;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background: transparent;
+            border-radius: 50%;
+            border: 1px solid #FFFF00;
+            top: -18px;
+            left: -14px;
+          }
+          &:hover::before {
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
+  &.team {
+    .info{
+      .title {
+        font: 2rem $rg-font-style-semi-bold;
+      }
+      .text {
+        font: 1rem $rg-font-style-light;
+        margin-bottom: 100px;
+      }
+      .prof {
+        max-width: 520px;
+        .link {
+          font: 1rem $rg-font-style-regular;
+          color: #717171;
+          transition: all 0.4s ease-in-out;
+          &:hover {
+            color: inherit;
+          }
+        }
+      }
+    }
+    .photos {
+      &-person {
+        position: relative;
+        margin-bottom: 48px;
+        img {
+          border-radius: 6px;
+        }
+        .label {
+          font: 1.333rem $rg-font-style-regular;
+          position: absolute;
+          bottom: 5px;
+          left: 28px;
+        }
       }
     }
   }
@@ -36,8 +113,3 @@
 /******************************
 * Портфолио (/portfolio/)
 ******************************/
-.page-portfolio{
-  &.section_1{
-    
-  }
-}
