@@ -1160,6 +1160,7 @@ section.pb-50, .section.pb-50 {
 .header .page__center .collapse .nav-link {
   color: white;
   text-align: center;
+  white-space: nowrap;
 }
 .header .page__center .collapse .nav-item:not(:last-child) {
   margin-right: 72px;
@@ -1855,6 +1856,15 @@ footer.footer .copyright img {
 
   .page-home.promo > .container {
     background: url(../img/girl-d1306333384c359ae020.png) no-repeat 100% 20%/500px;
+  }
+  .page-home.promo .info .list .item {
+    font: 1.1rem "IBM Plex Sans 500", sans-serif;
+  }
+  .page-home.promo .info .list .item::before {
+    width: 58px;
+    height: 58px;
+    top: -14px;
+    left: -10px;
   }
 }
 @media all and (max-width: 1200px) {

@@ -17,6 +17,19 @@
       > .container {
         background: url(../img/girl.png) no-repeat 100% 20%/500px;
       }
+      .info {
+        .list {
+          .item {
+            font: 1.1rem $rg-font-style-regular;
+            &::before {
+              width: 58px;
+              height: 58px;
+              top: -14px;
+              left: -10px;
+            }
+          }
+        }
+      }
     }
   }
 }

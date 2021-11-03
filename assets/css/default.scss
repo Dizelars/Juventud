@@ -385,6 +385,7 @@ section, .section {
             .nav-link {
                 color: $rg-text-color;
                 text-align: center;
+                white-space: nowrap;
             }
             .nav-item:not(:last-child) {
                 margin-right: 72px;
