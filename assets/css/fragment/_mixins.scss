@@ -13,20 +13,27 @@
   position: relative;
   padding: 10px 20px;
   border: 2px solid $rg-color-site;
-  border-radius: 50px;
-  color: white;
+  border-radius: 5px;
+  color: #2D2D2D;
   background: $rg-color-site;
   background-size: 200%;
   transition: .5s;
   white-space: nowrap;
-  box-shadow: 0 6px 7px rgb(77 144 104 / 40%);
-  &:focus,&:active{
-    box-shadow: none;
-    color: white;
+  &:focus,&:active,&:hover{
+    color: #fff;
+    background: transparent;
+    border: 2px solid $rg-color-site;
   }
-  &:hover{
-    background: white;
-    color: $rg-color-site;
+  &.transparent{
+    color: #fff;
+    background: transparent;
+    border: 2px solid $rg-color-site;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      color: $rg-color-site;
+      border-color: #fff;
+    }
   }
   &.white{
     background: white;

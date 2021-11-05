@@ -1260,21 +1260,28 @@ main.page-testimonials article.testimonial > .item.img * {
   position: relative;
   padding: 10px 20px;
   border: 2px solid #FFFF00;
-  border-radius: 50px;
-  color: white;
+  border-radius: 5px;
+  color: #2D2D2D;
   background: #FFFF00;
   background-size: 200%;
   transition: 0.5s;
   white-space: nowrap;
-  box-shadow: 0 6px 7px rgba(77, 144, 104, 0.4);
 }
-.btn:focus, .btn:active {
-  box-shadow: none;
-  color: white;
+.btn:focus, .btn:active, .btn:hover {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #FFFF00;
 }
-.btn:hover {
-  background: white;
+.btn.transparent {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #FFFF00;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+.btn.transparent:hover {
   color: #FFFF00;
+  border-color: #fff;
 }
 .btn.white {
   background: white;
@@ -1628,6 +1635,12 @@ form.search-form button {
   margin-top: 100px;
 }
 
+.line-two {
+  width: 282px;
+  height: 0.5px;
+  background-color: #6D6D6D;
+}
+
 /**********************************
 * Array
 **********************************/
@@ -1770,43 +1783,27 @@ footer.footer .copyright img {
 .page-home.promo .info .items {
   margin-bottom: 140px;
 }
-.page-home.promo .info .items .btn {
-  font: 1rem "IBM Plex Sans 500", sans-serif;
-  color: #2D2D2D;
-  border-radius: 6px;
-}
-.page-home.promo .info .items .link {
-  font: 0.889rem "IBM Plex Sans 500", sans-serif;
-  color: #fff;
-  border-radius: 6px;
-  border: 2px solid #FFFF00;
-  transition: all 0.4s ease-in-out;
-}
-.page-home.promo .info .items .link:hover {
-  color: #FFFF00;
-  border-color: #fff;
-}
-.page-home.promo .info .list {
+.page-home.promo .list {
   max-width: 700px;
   margin-bottom: 100px;
 }
-.page-home.promo .info .list .item {
+.page-home.promo .list .item {
   font: 1.333rem "IBM Plex Sans 500", sans-serif;
   position: relative;
   transition: all 0.4s ease-in-out;
 }
-.page-home.promo .info .list .item::before {
+.page-home.promo .list .item::before {
   content: "";
   position: absolute;
   width: 70px;
   height: 70px;
   background: transparent;
   border-radius: 50%;
-  border: 1px solid #FFFF00;
+  border: 1px solid #ffff00;
   top: -18px;
   left: -14px;
 }
-.page-home.promo .info .list .item:hover::before {
+.page-home.promo .list .item:hover::before {
   border: 1px solid #fff;
 }
 .page-home.team .info .title {
@@ -1840,6 +1837,31 @@ footer.footer .copyright img {
   bottom: 5px;
   left: 28px;
 }
+.page-home.portfolio .slider .list {
+  margin-bottom: 50px;
+}
+.page-home.portfolio .slider .list .item-title {
+  font-size: 1.3333rem;
+}
+.page-home.mackets .wrapper .category .link {
+  color: #717171;
+}
+.page-home.mackets .wrapper .promo-wrap .about__text {
+  margin-bottom: 68px;
+}
+.page-home.mackets .wrapper .promo-wrap .about__subtitle {
+  font-size: 1.3333rem;
+  color: #FFFF00;
+}
+.page-home.mackets .wrapper .promo-wrap .about .this:not(:last-child) {
+  margin-bottom: 48px;
+}
+.page-home.mackets .wrapper .promo-wrap .about .this-title {
+  font-size: 1.3333rem;
+}
+.page-home.mackets .wrapper .promo-wrap .about .this .list .item {
+  color: #717171;
+}
 
 /******************************
 * Портфолио (/portfolio/)
@@ -1848,14 +1870,17 @@ footer.footer .copyright img {
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./css/mobile.scss ***!
   \*******************************************************************************************************************************************************/
 @charset "UTF-8";
-@media all and (max-width: 1399px) {
+@media all and (max-width: 1399.98px) {
   /* Контент */
   .header .page__center .collapse .nav-item:not(:last-child) {
     margin-right: 20px;
   }
 
   .page-home.promo > .container {
-    background: url(../img/girl-d1306333384c359ae020.png) no-repeat 100% 20%/500px;
+    background: url(../img/girl-d1306333384c359ae020.png) no-repeat 100% 20%/480px;
+  }
+  .page-home.promo .info .list {
+    margin-bottom: 30px;
   }
   .page-home.promo .info .list .item {
     font: 1.1rem "IBM Plex Sans 500", sans-serif;
@@ -1866,14 +1891,18 @@ footer.footer .copyright img {
     top: -14px;
     left: -10px;
   }
+  .page-home.team .info .text {
+    margin-bottom: 40px;
+  }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1199.98px) {
   .page-home.promo .info h1 {
     font-size: 2.5rem;
   }
 }
-@media all and (max-width: 991px) {
-  .h2, h2 {
+@media all and (max-width: 991.98px) {
+  .h2,
+h2 {
     padding-bottom: 1em;
   }
 
@@ -1891,15 +1920,36 @@ footer.footer .copyright img {
   }
 
   /* Контент */
-  .page-home.section_1 h1 {
-    font-size: 2em;
+  .header {
+    margin-bottom: 50px;
   }
-  .page-home.section_3 .swiper-wrapper {
-    margin-bottom: 65px;
+
+  .page-home.promo > .container {
+    background: url(../img/girl-d1306333384c359ae020.png) no-repeat 100% 10%/430px;
   }
-  .page-home.section_3 .swiper-button-next, .page-home.section_3 .swiper-button-prev {
-    bottom: 30px;
-    top: auto;
+  .page-home.promo .info h1 {
+    font-size: 1.5rem;
+  }
+  .page-home.promo .info .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 75px;
+  }
+  .page-home.promo .info .items {
+    margin-bottom: 100px;
+  }
+  .page-home.promo .info .list .item:last-child {
+    padding-top: 50px;
+    margin-left: 110px;
+  }
+  .page-home.promo .info .list .item:last-child::before {
+    top: 35px;
+  }
+  .page-home.team .info .prof {
+    margin-bottom: 40px;
+  }
+  .page-home.team .info .prof .link {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
   }
 
   #demo .item {
@@ -1912,20 +1962,24 @@ footer.footer .copyright img {
     font-size: 0.8rem;
   }
 }
-@media all and (max-width: 767px) {
-  html body, .btn {
+@media all and (max-width: 767.98px) {
+  html body,
+.btn {
     font-size: 16px;
   }
 
-  h1, .h1 {
+  h1,
+.h1 {
     font-size: 2.5em;
   }
 
-  .h2, h2 {
+  .h2,
+h2 {
     font-size: 2em;
   }
 
-  h5, .h5 {
+  h5,
+.h5 {
     font-size: 1.5em;
   }
 
@@ -1945,24 +1999,21 @@ footer.footer .copyright img {
   }
 
   /* Контент */
-  .page-home.section_1 img.focus {
-    max-width: 350px;
-    display: block;
+  .page-home.promo > .container {
+    background: url(../img/girl-d1306333384c359ae020.png) no-repeat 50% 24%/265px;
   }
-  .page-home.section_2 img {
-    max-width: 350px;
+  .page-home.promo .info h1 {
+    font-size: 1.2rem;
   }
-  .page-home.section_3 .swiper-wrapper {
-    margin-top: 65px;
+  .page-home.promo .info .subtitle {
+    margin-bottom: 260px;
   }
-  .page-home.section_3 .swiper-button-next, .page-home.section_3 .swiper-button-prev {
-    bottom: auto;
-    top: 30px;
-    width: 40px;
-    height: 40px;
+  .page-home.promo .info .list .item {
+    font-size: 1rem;
   }
-  .page-home.section_3 .swiper-button-next:after, .page-home.section_3 .swiper-button-prev:after {
-    font-size: 1.5rem;
+  .page-home.promo .info .list .item::before {
+    top: -15px;
+    left: -15px;
   }
 
   #demo .item {
@@ -1976,13 +2027,42 @@ footer.footer .copyright img {
     left: -3%;
   }
 }
-@media all and (max-width: 575px) {
+@media all and (max-width: 575.98px) {
   #top-menu .top-line .items_top-line > .item {
     max-width: 210px;
   }
 
-  .page-home.section_1 h1 {
-    font-size: 2rem;
+  .header {
+    margin-bottom: 40px;
+  }
+  .header .page__end-link {
+    font-size: 18px;
+  }
+
+  .page-home.promo .info .subtitle {
+    margin-bottom: 300px;
+  }
+  .page-home.promo .info .items {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .page-home.promo .info .list .item {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .page-home.promo .info .list .item:first-child::before {
+    left: 52px;
+  }
+  .page-home.promo .info .list .item:nth-child(2)::before {
+    left: 46px;
+  }
+  .page-home.promo .info .list .item:last-child {
+    padding: 0;
+    margin: 0;
+  }
+  .page-home.promo .info .list .item:last-child::before {
+    left: 35px;
+    top: -15px;
   }
 
   #tariffs .tariffs-container .item p.price {

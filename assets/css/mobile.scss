@@ -1,187 +1,261 @@
-@import "fragment/_variables";
-@media all and (max-width: 1399px) {
-  /* Контент */
+@import 'fragment/_variables';
+@media all and (max-width: 1399.98px) {
+	/* Контент */
 
-  .header {
-    .page__center {
-      .collapse {
-        .nav-item:not(:last-child) {
-          margin-right: 20px;
-        }
-      }
-    }
-  }
+	.header {
+		.page__center {
+			.collapse {
+				.nav-item:not(:last-child) {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
 
-  .page-home {
-    &.promo {
-      > .container {
-        background: url(../img/girl.png) no-repeat 100% 20%/500px;
-      }
-      .info {
-        .list {
-          .item {
-            font: 1.1rem $rg-font-style-regular;
-            &::before {
-              width: 58px;
-              height: 58px;
-              top: -14px;
-              left: -10px;
-            }
-          }
-        }
-      }
-    }
-  }
+	.page-home {
+		&.promo {
+			> .container {
+				background: url(../img/girl.png) no-repeat 100% 20%/480px;
+			}
+			.info {
+				.list {
+					margin-bottom: 30px;
+					.item {
+						font: 1.1rem $rg-font-style-regular;
+						&::before {
+							width: 58px;
+							height: 58px;
+							top: -14px;
+							left: -10px;
+						}
+					}
+				}
+			}
+		}
+		&.team {
+			.info {
+				.text {
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
 }
-@media all and (max-width: 1200px) {
-  .page-home {
-    &.promo {
-      .info{
-        h1{
-          font-size: 2.5rem;
-        }
-      }
-    }
-  }
+@media all and (max-width: 1199.98px) {
+	.page-home {
+		&.promo {
+			.info {
+				h1 {
+					font-size: 2.5rem;
+				}
+			}
+		}
+	}
 }
-@media all and (max-width: 991px) {
-  .h2, h2 {
-    padding-bottom: 1em;
-  }
-  .title-desc {
-    .desc {
-      br {
-        display: none;
-      }
-    }
-  }
-  .btn.link .arrow{
-    margin-left: 10px;
-    width: 15px;
-  }
-  .items_top-line{
-    max-width: 540px;
-  }
-  /* Контент */
-  .page-home {
-    &.section_1 {
-      h1 {
-        font-size: 2em;
-      }
-    }
-    &.section_3{
-      .swiper-wrapper{
-        margin-bottom: 65px;
-      }
-      .swiper-button-next, .swiper-button-prev{
-        bottom: 30px;
-        top: auto;
-      }
-    }
+@media all and (max-width: 991.98px) {
+	.h2,
+	h2 {
+		padding-bottom: 1em;
+	}
+	.title-desc {
+		.desc {
+			br {
+				display: none;
+			}
+		}
+	}
+	.btn.link .arrow {
+		margin-left: 10px;
+		width: 15px;
+	}
+	.items_top-line {
+		max-width: 540px;
+	}
+	/* Контент */
 
-  }
-  #demo{
-    .item{
-      max-width:355px;
-      &.img{
-        max-width: 325px;
-        .btn{
-          font-size: 0.8rem;
-        }
-      }
-    }
-  }
-}
-@media all and (max-width: 767px){
-  html body, .btn{
-    font-size: 16px;
-  }
-  h1,.h1{
-    font-size: 2.5em;
-  }
-  .h2, h2 {
-    font-size: 2em;
-  }
-  h5, .h5 {
-    font-size: 1.5em;
-  }
-  .btn{
-    padding: 0.5rem 1em;
-    &.big{
-      font-size: 1em;
-    }
-  }
-  .title-desc{
-    .desc{
-      margin: 0 auto 2em;
-    }
-  }
-  #top-menu .top-line .items_top-line > .item.address_user {
-    max-width: 255px;
-  }
-  /* Контент */
-  .page-home{
-    &.section_1{
-      img{
-        &.focus{
-          max-width: 350px;
-          display: block;
-        }
-      }
-    }
-    &.section_2{
-      img{
-        max-width: 350px;
-      }
-    }
-    &.section_3{
-      .swiper-wrapper{
-        margin-top: 65px;
-      }
-      .swiper-button-next, .swiper-button-prev{
-        bottom: auto;
-        top: 30px;
-        width: 40px;
-        height: 40px;
-        &:after{
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
-  #demo{
-    .item{
-      max-width:284px;
-      &.img{
-        max-width: 220px;
-        .btn{
-          top: 64%;
-          left: -3%;
-        }
-      }
-    }
-  }
-}
-@media all and (max-width: 575px){
-  #top-menu .top-line .items_top-line > .item {
-    max-width: 210px;
-  }
-  //Контент
-  .page-home{
-    &.section_1 {
-      h1 {
-        font-size: 2rem;
-      }
-    }
-  }
-  #tariffs .tariffs-container .item p.price {
-    position: relative;
-    top: 0;
-    right: 0;
-    max-width: 240px;
-    max-width: max-content;
-  }
-}
-@media all and (min-width: 320px) and (max-width: 488px) {
+	.header {
+		margin-bottom: 50px;
+	}
 
+	.page-home {
+		&.promo {
+			> .container {
+				background: url(../img/girl.png) no-repeat 100% 10%/430px;
+			}
+			.info {
+				h1 {
+					font-size: 1.5rem;
+				}
+				.subtitle {
+					font-size: 1.1rem;
+					margin-bottom: 75px;
+				}
+				.items {
+					margin-bottom: 100px;
+				}
+				.list {
+					.item {
+						&:last-child {
+							padding-top: 50px;
+							margin-left: 110px;
+							&::before {
+								top: 35px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.team {
+			.info {
+				.prof {
+					margin-bottom: 40px;
+					.link {
+						margin-bottom: 15px;
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+	}
+	#demo {
+		.item {
+			max-width: 355px;
+			&.img {
+				max-width: 325px;
+				.btn {
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 767.98px) {
+	html body,
+	.btn {
+		font-size: 16px;
+	}
+	h1,
+	.h1 {
+		font-size: 2.5em;
+	}
+	.h2,
+	h2 {
+		font-size: 2em;
+	}
+	h5,
+	.h5 {
+		font-size: 1.5em;
+	}
+	.btn {
+		padding: 0.5rem 1em;
+		&.big {
+			font-size: 1em;
+		}
+	}
+	.title-desc {
+		.desc {
+			margin: 0 auto 2em;
+		}
+	}
+	#top-menu .top-line .items_top-line > .item.address_user {
+		max-width: 255px;
+	}
+	/* Контент */
+	.page-home {
+		&.promo {
+			> .container {
+				background: url(../img/girl.png) no-repeat 50% 24%/265px;
+			}
+			.info {
+				h1 {
+					font-size: 1.2rem;
+				}
+				.subtitle {
+					margin-bottom: 260px;
+				}
+				.list {
+					.item {
+						font-size: 1rem;
+						&::before {
+							top: -15px;
+							left: -15px;
+						}
+					}
+				}
+			}
+		}
+	}
+	#demo {
+		.item {
+			max-width: 284px;
+			&.img {
+				max-width: 220px;
+				.btn {
+					top: 64%;
+					left: -3%;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 575.98px) {
+	#top-menu .top-line .items_top-line > .item {
+		max-width: 210px;
+	}
+	//Контент
+
+	.header {
+		margin-bottom: 40px;
+		.page__end {
+			&-link {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.page-home {
+		&.promo {
+			.info {
+				.subtitle {
+					margin-bottom: 300px;
+				}
+				.items {
+					text-align: center;
+					margin-bottom: 50px;
+				}
+				.list {
+					.item {
+						text-align: center;
+						margin-bottom: 45px;
+						&:first-child {
+							&::before {
+								left: 52px;
+							}
+						}
+						&:nth-child(2) {
+							&::before {
+								left: 46px;
+							}
+						}
+						&:last-child {
+							padding: 0;
+							margin: 0;
+							&::before {
+								left: 35px;
+								top: -15px;
+							}
+						}
+					}
+				} 
+			}
+		}
+	}
+	#tariffs .tariffs-container .item p.price {
+		position: relative;
+		top: 0;
+		right: 0;
+		max-width: 240px;
+		max-width: max-content;
+	}
 }
