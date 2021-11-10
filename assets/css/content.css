@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/******************************
+* Часто повторяющиеся элементы
+* Главная страница (/)
+******************************/
+/******************************
+* Кнопка
+* Тень
+* Блок с тенью
+* Текст градиент
+******************************/
+/******************************
+* Кнопка
+******************************/
+/******************************
+* Тень
+******************************/
+/******************************
+* Блок с тенью
+******************************/
+/******************************
+* Текст градиент
+******************************/
+/******************************
+* Часто повторяющиеся элементы
+******************************/
+/******************************
+* Главная страница (/)
+******************************/
+.page-home.promo {
+  padding-top: 100px;
+}
+
+.page-home.promo > .container {
+  position: relative;
+}
+
+.page-home.promo > .container img {
+  height: 640px;
+  width: 650px;
+  position: absolute;
+  top: -56px;
+  right: -36px;
+}
+
+.page-home.promo .preview h1 {
+  font: 3.1111rem "IBM Plex Sans 700", sans-serif;
+  margin-bottom: 48px;
+}
+
+.page-home.promo .preview .subtitle {
+  font: 1.3333rem "IBM Plex Sans 600", sans-serif;
+}
+
+.page-home.promo .preview .items {
+  margin-top: 100px;
+}
+
+.page-home.promo .list {
+  margin-bottom: 100px;
+  margin-top: 140px;
+}
+
+.page-home.promo .list .item {
+  font: 1.333rem "IBM Plex Sans 500", sans-serif;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.page-home.promo .list .item a {
+  position: relative;
+}
+
+.page-home.promo .list .item a::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #ffff00;
+  top: -20px;
+  left: -14px;
+}
+
+.page-home.promo .list .item:hover a::before {
+  border: 1px solid #fff;
+}
+
+.page-home.team .info .title {
+  font: 2rem "IBM Plex Sans 600", sans-serif;
+}
+
+.page-home.team .info .text {
+  font: 1rem "IBM Plex Sans 400", sans-serif;
+  margin-bottom: 100px;
+}
+
+.page-home.team .info .prof {
+  max-width: 520px;
+}
+
+.page-home.team .info .prof .link {
+  font: 1rem "IBM Plex Sans 500", sans-serif;
+  color: #717171;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.page-home.team .info .prof .link:hover {
+  color: inherit;
+}
+
+.page-home.team .photos-person {
+  position: relative;
+}
+
+.page-home.team .photos-person img {
+  border-radius: 6px;
+}
+
+.page-home.team .photos-person .label {
+  font: 1.333rem "IBM Plex Sans 500", sans-serif;
+  position: absolute;
+  bottom: 5px;
+  left: 28px;
+}
+
+.page-home.portfolio .slider .list .item-title {
+  font-size: 1.3333rem;
+}
+
+.page-home.mackets .wrapper .category .link {
+  color: #717171;
+}
+
+.page-home.mackets .wrapper .category .link:hover {
+  color: #fff;
+}
+
+.page-home.mackets .wrapper .category .link::after {
+  background-color: #BA0725;
+}
+
+.page-home.mackets .wrapper .promo-wrap .about__text {
+  margin-bottom: 68px;
+}
+
+.page-home.mackets .wrapper .promo-wrap .about__subtitle {
+  font-size: 1.3333rem;
+  color: #FFFF00;
+}
+
+.page-home.mackets .wrapper .promo-wrap .about .this:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.page-home.mackets .wrapper .promo-wrap .about .this-title {
+  font-size: 1.3333rem;
+}
+
+.page-home.mackets .wrapper .promo-wrap .about .this .list .item {
+  color: #717171;
+}
+
+.page-home.mackets .wrapper .promo-wrap .about .link {
+  margin-top: 128px;
+}
+
+.page-home.price .array {
+  background: transparent;
+}
+
+.page-home.price .card-list .card-item {
+  position: relative;
+  background: radial-gradient(circle at 50% -15px, transparent 79px, #FFFF00 1px, transparent 82px);
+  max-width: 230px;
+  width: 100%;
+  border: 1px solid #FFFF00;
+  border-radius: 6px;
+  padding: 40px 6px;
+  margin: 10px 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.page-home.price .card-list .card-item .circle {
+  position: absolute;
+  background: #fff;
+  border-radius: 130px;
+  width: 130px;
+  height: 130px;
+  top: -80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.page-home.price .card-list .card-item .circle .card-title {
+  position: absolute;
+  font-size: 1.3333rem;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -35%);
+          transform: translate(-50%, -35%);
+}
+
+.page-home.price .card-list .card-item .card-price {
+  font: 1.3333rem "IBM Plex Sans 500", sans-serif;
+  border-bottom: 1px solid #FFFF00;
+  margin-bottom: 24px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.page-home.price .card-list .card-item .list {
+  margin-bottom: 30px;
+}
+
+.page-home.price .card-list .card-item .list .item {
+  position: relative;
+  color: #ffffff;
+  margin-left: 25px;
+  font-size: 0.8889rem;
+}
+
+.page-home.price .card-list .card-item .list .item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.page-home.price .card-list .card-item .list .item::before {
+  content: "";
+  position: absolute;
+  background: url("../img/svg/Group.svg");
+  width: 24px;
+  height: 24px;
+  left: -28px;
+  top: -2px;
+}
+
+.page-home.price .card-list .card-item .link {
+  padding: 8px 28px;
+  background-color: #FFFF00;
+  border: 2px solid #FFFF00;
+  border-radius: 6px;
+  color: #000000;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.page-home.price .card-list .card-item .link:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.page-home.work .accordion-wrapper .accordion .accordion-item:first-of-type {
+  counter-reset: heading;
+}
+
+.page-home.work .accordion-wrapper .accordion .accordion-item .accordion-header .accordion-button {
+  font: 1.3333rem "IBM Plex Sans 400", sans-serif;
+  border-top: 1px solid #717171;
+  border-radius: 0;
+}
+
+.page-home.work .accordion-wrapper .accordion .accordion-item .accordion-header .accordion-button::after {
+  position: relative;
+  top: -24px;
+  background-image: none;
+  counter-increment: heading;
+  content: counter(heading);
+  background: none;
+  text-shadow: #717171 1px 0px 0px, #717171 0.5403px 0.84147px 0px, #717171 -0.41615px 0.9093px 0px, #717171 -0.98999px 0.14112px 0px, #717171 -0.65364px -0.7568px 0px, #717171 0.28366px -0.95892px 0px, #717171 0.96017px -0.27942px 0px;
+  font-size: 50px;
+  color: #000;
+}
+
+.page-home.work .accordion-wrapper .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: none;
+  -webkit-transform: none;
+          transform: none;
+  color: #ffff00;
+  text-shadow: none;
+  font-size: 50px;
+}
+
+.page-home.work .accordion-wrapper .accordion .accordion-item .accordion-header .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.page-home.work .accordion-wrapper .accordion .accordion-collapse .accordion-body {
+  font: 1rem "IBM Plex Sans 400", sans-serif;
+}
+
+.page-home.application .application-subtitle {
+  font: 1.9444rem "IBM Plex Sans 600", sans-serif;
+}
+
+.page-home.application .line {
+  margin-top: 50px;
+}
+
+/******************************
+* Портфолио (/portfolio/)
+******************************/
+/*# sourceMappingURL=content.css.map */
