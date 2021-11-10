@@ -1756,7 +1756,7 @@ form.search-form button {
 * Footer
 **********************************/
 .footer-page.footer {
-  padding: 45px 0;
+  padding-bottom: 45px;
 }
 .footer-page.footer .info {
   max-width: 222px;
@@ -1848,7 +1848,6 @@ form.search-form button {
 }
 .modal .modal-dialog .modal-footer .form-check {
   width: 179px;
-  padding-right: 10px;
 }
 .modal .modal-dialog .modal-footer .form-check .form-check-input {
   float: right;
@@ -1859,7 +1858,13 @@ form.search-form button {
 @charset "UTF-8";
 /******************************
 * Часто повторяющиеся элементы
-* Главная страница (/)
+* Главная страница (/home/)
+* О нас (/about/)
+* Портфолио (/portfolio/)
+* Цены (/price/)
+* Контакты (/contacts/)
+* Редизайн (/redesign/)
+* 404 (/error/)
 ******************************/
 /******************************
 * Кнопка
@@ -1882,8 +1887,20 @@ form.search-form button {
 /******************************
 * Часто повторяющиеся элементы
 ******************************/
+.scatter-left {
+  max-width: 630px;
+  width: 100%;
+  margin-right: auto;
+  text-align: left;
+}
+.scatter-right {
+  max-width: 630px;
+  width: 100%;
+  margin-left: auto;
+}
+
 /******************************
-* Главная страница (/)
+* Главная страница (/home/)
 ******************************/
 .page-home.promo {
   padding-top: 100px;
@@ -1931,7 +1948,7 @@ form.search-form button {
   left: -14px;
   color: black;
   text-align: right;
-  line-height: 48px;
+  line-height: 53px;
   font-size: 79px;
   z-index: -1;
   text-indent: 54px;
@@ -1978,9 +1995,6 @@ form.search-form button {
 .page-home.mackets .wrapper .category .link:hover {
   color: #fff;
 }
-.page-home.mackets .wrapper .category .link::after {
-  background-color: #ba0725;
-}
 .page-home.mackets .wrapper .promo-wrap .about__text {
   margin-bottom: 68px;
 }
@@ -2024,7 +2038,7 @@ form.search-form button {
   border-bottom: 1px solid #ffff00;
   border-right: 1px solid #ffff00;
   border-left: 1px solid #ffff00;
-  transition: all 0.5s;
+  transition: all 0.4s ease-in-out;
   left: 0;
   right: 0;
   margin: auto;
@@ -2035,7 +2049,11 @@ form.search-form button {
 .page-home.price .card-list .card-item:hover::before {
   border-color: #ba0725;
 }
+.page-home.price .card-list .card-item:hover .circle {
+  background: #ba0725;
+}
 .page-home.price .card-list .card-item:hover .card-price {
+  color: #ffff00;
   border-color: #ba0725;
 }
 .page-home.price .card-list .card-item:hover .link {
@@ -2052,6 +2070,7 @@ form.search-form button {
   left: 0;
   right: 0;
   margin: auto;
+  transition: all 0.4s ease-in-out;
 }
 .page-home.price .card-list .card-item .circle .card-title {
   position: absolute;
@@ -2084,7 +2103,7 @@ form.search-form button {
 .page-home.price .card-list .card-item .list .item::before {
   content: "";
   position: absolute;
-  background: url(../img/Group-1aeb6211871622d139a9.svg);
+  background: url(../img/check-1aeb6211871622d139a9.svg);
   width: 24px;
   height: 24px;
   left: -28px;
@@ -2136,24 +2155,185 @@ form.search-form button {
 }
 .page-home.application .application-subtitle {
   font: 1.9444rem "IBM Plex Sans 600", sans-serif;
+  margin-top: 48px;
 }
 .page-home.application .line {
   margin-top: 50px;
 }
 
 /******************************
+* О нас (/about/)
+******************************/
+.page-about.preview .line {
+  margin-top: 50px;
+}
+.page-about.preview .preview__title {
+  font: 7.9444rem "IBM Plex Sans 700", sans-serif;
+  margin-top: 50px;
+  text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff, 2px 2px 0px rgba(255, 255, 255, 0);
+}
+.page-about.preview .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 22px;
+}
+.page-about.breadcrumbs {
+  position: relative;
+  padding: 13px 14px;
+  z-index: 10;
+}
+.page-about.breadcrumbs .list .item {
+  position: relative;
+  padding-right: 17px;
+}
+.page-about.breadcrumbs .list .item::after {
+  content: "/";
+  position: absolute;
+}
+.page-about.breadcrumbs .list .item .link {
+  margin-right: 5px;
+}
+.page-about.description h2 {
+  font: 2.6667rem "IBM Plex Sans 400", sans-serif;
+}
+.page-about.description h2,
+.page-about.description p {
+  max-width: 630px;
+  width: 100%;
+  margin-right: auto;
+}
+.page-about.description .right {
+  margin-right: 0;
+  margin-left: auto;
+}
+.page-about.departments {
+  position: relative;
+  min-height: 57vh;
+  margin-bottom: 160px;
+  background: url(../img/about-bg-6a823dde97b82b941f1f.jpg) no-repeat 50%/cover;
+}
+.page-about.departments .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 90%);
+}
+.page-about.departments .list {
+  max-width: 220px;
+  width: 100%;
+  min-height: 215px;
+  padding: 20px 10px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+}
+.page-about.departments .list p {
+  font: 1.7778rem "IBM Plex Sans 500", sans-serif;
+}
+.page-about.departments .list .item {
+  font-family: "IBM Plex Sans 400", sans-serif;
+}
+.page-about.partners p {
+  max-width: 630px;
+  width: 100%;
+  margin-left: auto;
+}
+.page-about.partners .logo {
+  margin-top: 48px;
+}
+.page-about.partners .logo .images {
+  width: 100%;
+  max-width: 300px;
+  height: 70px;
+  border-radius: 6px;
+  padding: 0;
+  margin: 20px 37px;
+}
+
+/******************************
 * Портфолио (/portfolio/)
+******************************/
+/******************************
+* Цены (/price/)
+******************************/
+.page-price.whywe .title {
+  font: 1.7778rem "IBM Plex Sans 400", sans-serif;
+}
+.page-price.whywe .text {
+  font-family: "IBM Plex Sans 400", sans-serif;
+}
+
+/******************************
+* Контакты (/contacts/)
+******************************/
+.page-contacts.addres {
+  position: relative;
+  min-height: 57vh;
+  background: url(../img/contacts-bg-81350d488259583110de.jpg) no-repeat 50%/cover;
+}
+.page-contacts.addres .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 982px;
+  height: 362px;
+  background-color: #fff;
+}
+.page-contacts.addres .wrapper .info {
+  padding: 70px;
+  max-width: 414px;
+  width: 100%;
+}
+.page-contacts.addres .wrapper .info .link {
+  margin-left: 70px;
+  position: relative;
+  color: #000;
+}
+.page-contacts.addres .wrapper .info .link::before {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -70px;
+  top: -8px;
+}
+.page-contacts.addres .wrapper .info .phone::before {
+  content: url(../img/contacts-phone-402b72bc02f28e7dc3f4.svg);
+}
+.page-contacts.addres .wrapper .info .mail::before {
+  content: url(../img/contacts-mail-b3c09b11c02ef60a3be4.svg);
+}
+.page-contacts.addres .wrapper .info .town::before {
+  content: url(../img/contacts-map-60d1bd16178f549d8666.svg);
+}
+.page-contacts.addres .wrapper .info .social a {
+  width: 30px;
+  height: 30px;
+}
+.page-contacts.addres .wrapper .info .social a:not(:last-child) {
+  margin-right: 30px;
+}
+.page-contacts.addres .wrapper .map {
+  width: 100%;
+}
+
+/******************************
+* Редизайн (/redesign/)
+******************************/
+/******************************
+* 404 (/error/)
 ******************************/
 /*!*******************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./css/mobile.scss ***!
   \*******************************************************************************************************************************************************/
 @charset "UTF-8";
 @media all and (max-width: 1399.98px) {
-  /* Контент */
   .header .page__center .collapse .nav-item:not(:last-child) {
     margin-right: 20px;
   }
 
+  /* Контент */
   .page-home.promo > .container img {
     right: -90px;
   }
@@ -2166,17 +2346,28 @@ form.search-form button {
   .page-home.promo .info .list .item {
     font: 1.1rem "IBM Plex Sans 500", sans-serif;
   }
-  .page-home.promo .info .list .item::before {
-    width: 58px;
-    height: 58px;
-    top: -14px;
-    left: -10px;
+  .page-home.promo .info .list .item a::before {
+    line-height: 48px;
   }
   .page-home.team .info .text {
     margin-bottom: 40px;
   }
+
+  .footer-page.footer .info {
+    max-width: 153px;
+    width: 100%;
+  }
+  .footer-page.footer .links {
+    max-width: 722px;
+    width: 100%;
+  }
+  .footer-page.footer .contacts {
+    max-width: 205px;
+    width: 100%;
+  }
 }
 @media all and (max-width: 1199.98px) {
+  /* Контент */
   .page-home.promo > .container img {
     height: 540px;
     width: 550px;
@@ -2187,6 +2378,14 @@ form.search-form button {
   }
   .page-home.promo .preview .subtitle {
     font-size: inherit;
+  }
+
+  .footer-page.footer .links {
+    width: 100%;
+    max-width: 934px;
+  }
+  .footer-page.footer .contacts .phone {
+    font-size: 1.3rem;
   }
 }
 @media all and (max-width: 991.98px) {
@@ -2208,11 +2407,11 @@ h2 {
     max-width: 540px;
   }
 
-  /* Контент */
   .header {
     margin-bottom: 50px;
   }
 
+  /* Контент */
   .page-home.promo {
     padding-top: 56px;
   }
@@ -2239,6 +2438,22 @@ h2 {
   .page-home.team .info .prof .link {
     margin-bottom: 15px;
     font-size: 1.2rem;
+  }
+
+  .page-about.departments {
+    margin-bottom: 20px;
+  }
+  .page-about.departments .container {
+    transform: none;
+    position: static;
+    top: 0;
+    left: 0;
+  }
+
+  .footer-page.footer .links .list {
+    max-width: 145px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   #demo .item {
@@ -2318,6 +2533,10 @@ h2 {
     text-indent: 32px;
   }
 
+  .page-about.description h2 {
+    font-size: 1.9rem;
+  }
+
   #demo .item {
     max-width: 284px;
   }
@@ -2341,6 +2560,7 @@ h2 {
     font-size: 18px;
   }
 
+  /* Контент */
   .page-home.promo > .container img {
     height: 280px;
     width: 290px;
@@ -2384,6 +2604,10 @@ h2 {
   }
   .page-home.application .application-subtitle {
     font-size: 1.5rem;
+  }
+
+  .page-about.preview .preview__title {
+    font-size: 5.1rem;
   }
 
   #tariffs .tariffs-container .item p.price {

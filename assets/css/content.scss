@@ -1,15 +1,37 @@
 /******************************
 * Часто повторяющиеся элементы
-* Главная страница (/)
+* Главная страница (/home/)
+* О нас (/about/)
+* Портфолио (/portfolio/)
+* Цены (/price/)
+* Контакты (/contacts/)
+* Редизайн (/redesign/)
+* 404 (/error/)
 ******************************/
 @import 'fragment/_variables';
 @import 'fragment/_mixins';
+
 /******************************
 * Часто повторяющиеся элементы
 ******************************/
 
+// Раскидать текст
+.scatter {
+	&-left {
+		max-width: 630px;
+		width: 100%;
+		margin-right: auto;
+		text-align: left;
+	}
+	&-right {
+		max-width: 630px;
+		width: 100%;
+		margin-left: auto;
+	}
+}
+
 /******************************
-* Главная страница (/)
+* Главная страница (/home/)
 ******************************/
 .page-home {
 	&.promo {
@@ -23,7 +45,6 @@
 				top: -56px;
 				right: -36px;
 			}
-			// background: url(../img/girl.png) no-repeat 100% 10%/710px;
 		}
 		.preview {
 			h1 {
@@ -57,7 +78,7 @@
 						left: -14px;
 						color: black;
 						text-align: right;
-						line-height: 48px;
+						line-height: 53px;
 						font-size: 79px;
 						z-index: -1;
 						text-indent: 54px;
@@ -124,9 +145,6 @@
 					&:hover {
 						color: #fff;
 					}
-					&::after {
-						background-color: #ba0725;
-					}
 				}
 			}
 			.promo-wrap {
@@ -167,7 +185,6 @@
 		.card-list {
 			.card-item {
 				position: relative;
-				//background: radial-gradient(circle at 50% -15px, transparent 79px, #FFFF00 1px, transparent 82px);
 				max-width: 230px;
 				width: 100%;
 				border: 1px solid #ffff00;
@@ -186,7 +203,7 @@
 					border-bottom: 1px solid #ffff00;
 					border-right: 1px solid #ffff00;
 					border-left: 1px solid #ffff00;
-					transition: all 0.5s;
+					transition: all 0.4s ease-in-out;
 					left: 0;
 					right: 0;
 					margin: auto;
@@ -196,8 +213,11 @@
 					&::before {
 						border-color: #ba0725;
 					}
-					//background: radial-gradient(circle at 50% -15px, transparent 79px, #BA0725 1px, transparent 82px);
+					.circle {
+						background: #ba0725;
+					}
 					.card-price {
+						color: #ffff00;
 						border-color: #ba0725;
 					}
 					.link {
@@ -215,6 +235,7 @@
 					left: 0;
 					right: 0;
 					margin: auto;
+					transition: all 0.4s ease-in-out;
 					.card-title {
 						position: absolute;
 						font-size: 1.3333rem;
@@ -245,7 +266,7 @@
 						&::before {
 							content: '';
 							position: absolute;
-							background: url('../img/svg/Group.svg');
+							background: url('../img/pages/home/svg/check.svg');
 							width: 24px;
 							height: 24px;
 							left: -28px;
@@ -323,6 +344,7 @@
 	&.application {
 		.application-subtitle {
 			font: 1.9444rem $rg-font-style-semi-bold;
+			margin-top: 48px;
 		}
 		.line {
 			margin-top: 50px;
@@ -331,5 +353,196 @@
 }
 
 /******************************
+* О нас (/about/)
+******************************/
+.page-about {
+	&.preview {
+		.line {
+			margin-top: 50px;
+		}
+		.preview__title {
+			font: 7.9444rem $rg-font-style-bold;
+			margin-top: 50px;
+			text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff,
+				-2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff,
+				-2px 0px 0 #ffffff, 0px -2px 0 #ffffff,
+				2px 2px 0px rgba(255, 255, 255, 0);
+		}
+		.btn {
+			display: block;
+			margin-left: auto;
+			margin-right: 0;
+			margin-bottom: 22px;
+		}
+	}
+	&.breadcrumbs {
+		position: relative;
+		padding: 13px 14px;
+		z-index: 10;
+		.list {
+			.item {
+				position: relative;
+				padding-right: 17px;
+				&::after {
+					content: '/';
+					position: absolute;
+				}
+				.link {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	&.description {
+		h2 {
+			font: 2.6667rem $rg-font-style-light;
+		}
+		h2,
+		p {
+			max-width: 630px;
+			width: 100%;
+			margin-right: auto;
+		}
+		.right {
+			margin-right: 0;
+			margin-left: auto;
+		}
+	}
+	&.departments {
+		position: relative;
+		min-height: 57vh;
+		margin-bottom: 160px;
+		background: url('../img/pages/about/about-bg.jpg') no-repeat 50% / cover;
+		.container {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, 90%);
+		}
+		.list {
+			max-width: 220px;
+			width: 100%;
+			min-height: 215px;
+			padding: 20px 10px;
+			border-radius: 6px;
+			background-color: #fff;
+			color: #000;
+			p {
+				font: 1.7778rem $rg-font-style-regular;
+			}
+			.item {
+				font-family: $rg-font-style-light;
+			}
+		}
+	}
+	&.partners {
+		p {
+			max-width: 630px;
+			width: 100%;
+			margin-left: auto;
+		}
+		.logo {
+			margin-top: 48px;
+			.images {
+				width: 100%;
+				max-width: 300px;
+				height: 70px;
+				border-radius: 6px;
+				padding: 0;
+				margin: 20px 37px;
+			}
+		}
+	}
+}
+
+/******************************
 * Портфолио (/portfolio/)
 ******************************/
+
+/******************************
+* Цены (/price/)
+******************************/
+.page-price {
+	&.whywe {
+		.title {
+			font: 1.7778rem $rg-font-style-light;
+		}
+		.text {
+			font-family: $rg-font-style-light;
+		}
+	}
+}
+
+/******************************
+* Контакты (/contacts/)
+******************************/
+.page-contacts {
+	&.addres {
+		position: relative;
+		min-height: 57vh;
+		background: url('../img/pages/contacts/contacts-bg.jpg') no-repeat 50%/cover;
+		.wrapper {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 982px;
+			height: 362px;
+			background-color: #fff;
+			.info {
+				padding: 70px;
+				max-width: 414px;
+				width: 100%;
+				.link {
+					margin-left: 70px;
+					position: relative;
+					color: #000;
+					&::before {
+						position: absolute;
+						width: 30px;
+						height: 30px;
+						left: -70px;
+						top: -8px;
+					}
+				}
+				.phone {
+					&::before {
+						content: url("../img/pages/contacts/svg/contacts-phone.svg");
+					}
+				}
+				.mail {
+					&::before {
+						content: url("../img/pages/contacts/svg/contacts-mail.svg");
+					}
+				}
+				.town {
+					&::before {
+						content: url("../img/pages/contacts/svg/contacts-map.svg");
+					}
+				}
+				.social {
+					a {
+						width: 30px;
+						height: 30px;
+						&:not(:last-child) {
+							margin-right: 30px;
+						}
+					}
+				}
+			}
+			.map {
+				width: 100%;
+			}
+		}
+	}
+}
+
+/******************************
+* Редизайн (/redesign/)
+******************************/
+
+
+/******************************
+* 404 (/error/)
+******************************/
+

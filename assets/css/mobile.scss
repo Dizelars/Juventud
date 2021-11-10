@@ -1,7 +1,6 @@
 @import 'fragment/_variables';
 @media all and (max-width: 1399.98px) {
-	/* Контент */
-
+	
 	.header {
 		.page__center {
 			.collapse {
@@ -12,6 +11,7 @@
 		}
 	}
 
+	/* Контент */
 	.page-home {
 		&.promo {
 			> .container {
@@ -29,11 +29,10 @@
 					margin-bottom: 30px;
 					.item {
 						font: 1.1rem $rg-font-style-regular;
-						&::before {
-							width: 58px;
-							height: 58px;
-							top: -14px;
-							left: -10px;
+						a {
+							&::before {
+								line-height: 48px;
+							}
 						}
 					}
 				}
@@ -47,8 +46,26 @@
 			}
 		}
 	}
+
+	.footer-page {
+		&.footer {
+			.info {
+				max-width: 153px;
+				width: 100%;
+			}
+			.links {
+				max-width: 722px;
+				width: 100%;
+			}
+			.contacts {
+				max-width: 205px;
+				width: 100%;
+			}
+		}
+	}
 }
 @media all and (max-width: 1199.98px) {
+	/* Контент */
 	.page-home {
 		&.promo {
 			> .container {
@@ -64,6 +81,20 @@
 				}
 				.subtitle {
 					font-size: inherit;
+				}
+			}
+		}
+	}
+
+	.footer-page {
+		&.footer {
+			.links {
+				width: 100%;
+				max-width: 934px;
+			}
+			.contacts {
+				.phone {
+					font-size: 1.3rem;
 				}
 			}
 		}
@@ -88,12 +119,12 @@
 	.items_top-line {
 		max-width: 540px;
 	}
-	/* Контент */
 
 	.header {
 		margin-bottom: 50px;
 	}
 
+	/* Контент */
 	.page-home {
 		&.promo {
 			padding-top: 56px;
@@ -139,6 +170,31 @@
 			}
 		}
 	}
+
+	.page-about {
+		&.departments {
+			margin-bottom: 20px;
+			.container {
+				transform: none;
+				position: static;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	.footer-page {
+		&.footer {
+			.links {
+				.list {
+					max-width: 145px;
+					margin-left: 20px;
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+
 	#demo {
 		.item {
 			max-width: 355px;
@@ -182,6 +238,7 @@
 	#top-menu .top-line .items_top-line > .item.address_user {
 		max-width: 255px;
 	}
+
 	/* Контент */
 	.page-home {
 		&.promo {
@@ -198,8 +255,6 @@
 			.preview {
 				h1 {
 					font-size: 1.6rem;
-				}
-				.item {
 				}
 			}
 			.info {
@@ -222,6 +277,15 @@
 			}
 		}
 	}
+
+	.page-about {
+		&.description {
+			h2 {
+				font-size: 1.9rem;
+			}
+		}
+	}
+
 	#demo {
 		.item {
 			max-width: 284px;
@@ -239,7 +303,6 @@
 	#top-menu .top-line .items_top-line > .item {
 		max-width: 210px;
 	}
-	//Контент
 
 	.header {
 		margin-bottom: 40px;
@@ -250,6 +313,7 @@
 		}
 	}
 
+	/* Контент */
 	.page-home {
 		&.promo {
 			> .container {
@@ -316,6 +380,15 @@
 			}
 		}
 	}
+
+	.page-about {
+		&.preview {
+			.preview__title {
+				font-size: 5.1rem;
+			}
+		}
+	}
+
 	#tariffs .tariffs-container .item p.price {
 		position: relative;
 		top: 0;

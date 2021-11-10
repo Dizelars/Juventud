@@ -1195,7 +1195,7 @@ form.search-form {
 	&::after {
 		content: '';
 		position: absolute;
-		background: url('../img/svg/array-black.svg');
+		background: url('../img/pages/home/svg/array-black.svg');
 		width: 32px;
 		height: 24px;
 		top: 13px;
@@ -1213,7 +1213,7 @@ form.search-form {
 	&:hover {
 		background: transparent;
 		&::after {
-			background: url('../img/svg/array-white.svg');
+			background: url('../img/pages/home/svg/array-white.svg');
 		}
 	}
 }
@@ -1223,7 +1223,7 @@ form.search-form {
 **********************************/
 .footer-page {
 	&.footer {
-		padding: 45px 0;
+		padding-bottom: 45px;
 		.info {
 			max-width: 222px;
 			width: 100%;
