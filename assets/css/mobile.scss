@@ -15,7 +15,14 @@
 	.page-home {
 		&.promo {
 			> .container {
-				background: url(../img/girl.png) no-repeat 100% 20%/480px;
+				img {
+					right: -90px;
+				}
+			}
+			.preview {
+				h1 {
+					font-size: 2.6rem;
+				}
 			}
 			.info {
 				.list {
@@ -44,9 +51,19 @@
 @media all and (max-width: 1199.98px) {
 	.page-home {
 		&.promo {
-			.info {
+			> .container {
+				img {
+					height: 540px;
+					width: 550px;
+					top: -100px;
+				}
+			}
+			.preview {
 				h1 {
-					font-size: 2.5rem;
+					font-size: 2.2rem;
+				}
+				.subtitle {
+					font-size: inherit;
 				}
 			}
 		}
@@ -79,25 +96,29 @@
 
 	.page-home {
 		&.promo {
+			padding-top: 56px;
 			> .container {
-				background: url(../img/girl.png) no-repeat 100% 10%/430px;
+				img {
+					height: 490px;
+					width: 500px;
+					top: -50px;
+				}
 			}
-			.info {
+			.preview {
 				h1 {
-					font-size: 1.5rem;
+					font-size: 1.6rem;
 				}
 				.subtitle {
-					font-size: 1.1rem;
-					margin-bottom: 75px;
+					font-size: inherit;
 				}
 				.items {
-					margin-bottom: 100px;
+					margin-top: 65px;
 				}
+			}
+			.info {
 				.list {
 					.item {
 						&:last-child {
-							padding-top: 50px;
-							margin-left: 110px;
 							&::before {
 								top: 35px;
 							}
@@ -164,22 +185,37 @@
 	/* Контент */
 	.page-home {
 		&.promo {
+			padding-top: 10px;
 			> .container {
-				background: url(../img/girl.png) no-repeat 50% 24%/265px;
+				position: relative;
+				img {
+					height: 300px;
+					width: 310px;
+					top: -30px;
+					left: 310px;
+				}
+			}
+			.preview {
+				h1 {
+					font-size: 1.6rem;
+				}
+				.item {
+				}
 			}
 			.info {
-				h1 {
-					font-size: 1.2rem;
-				}
-				.subtitle {
-					margin-bottom: 260px;
-				}
 				.list {
+					margin-top: 85px;
 					.item {
-						font-size: 1rem;
-						&::before {
-							top: -15px;
-							left: -15px;
+						font-size: 0.9rem;
+						a {
+							&::before {
+								width: 45px;
+								height: 45px;
+								top: -10px;
+								left: -9px;
+								line-height: 32px;
+								text-indent: 32px;
+							}
 						}
 					}
 				}
@@ -216,18 +252,33 @@
 
 	.page-home {
 		&.promo {
-			.info {
+			> .container {
+				img {
+					height: 280px;
+					width: 290px;
+					top: 195px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			.preview {
+				.h1 {
+					font-size: 1.4rem;
+				}
 				.subtitle {
-					margin-bottom: 300px;
+					margin-bottom: 360px;
 				}
 				.items {
 					text-align: center;
 					margin-bottom: 50px;
 				}
+			}
+			.info {
 				.list {
+					margin-top: 30px;
 					.item {
 						text-align: center;
-						margin-bottom: 45px;
+						margin-bottom: 60px;
 						&:first-child {
 							&::before {
 								left: 52px;
@@ -247,7 +298,21 @@
 							}
 						}
 					}
-				} 
+				}
+			}
+		}
+		&.mackets {
+			.wrapper {
+				.category {
+					.link {
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+		&.application {
+			.application-subtitle {
+				font-size: 1.5rem;
 			}
 		}
 	}

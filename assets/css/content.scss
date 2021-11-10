@@ -13,43 +13,57 @@
 ******************************/
 .page-home {
 	&.promo {
-		padding-top: 0;
+		padding-top: 100px;
 		> .container {
-			background: url(../img/girl.png) no-repeat 100% 10%/710px;
+			position: relative;
+			img {
+				height: 640px;
+				width: 650px;
+				position: absolute;
+				top: -56px;
+				right: -36px;
+			}
+			// background: url(../img/girl.png) no-repeat 100% 10%/710px;
 		}
-		.info {
+		.preview {
 			h1 {
 				font: 3.1111rem $rg-font-style-bold;
-				text-transform: uppercase;
 				margin-bottom: 48px;
 			}
 			.subtitle {
 				font: 1.3333rem $rg-font-style-semi-bold;
-				margin-bottom: 96px;
 			}
 			.items {
-				margin-bottom: 140px;
+				margin-top: 100px;
 			}
 		}
 		.list {
-			max-width: 700px;
 			margin-bottom: 100px;
+			margin-top: 140px;
 			.item {
 				font: 1.333rem $rg-font-style-regular;
-				position: relative;
 				transition: all 0.4s ease-in-out;
-				&::before {
-					content: '';
-					position: absolute;
-					width: 70px;
-					height: 70px;
-					background: transparent;
-					border-radius: 50%;
-					border: 1px solid #ffff00;
-					top: -18px;
-					left: -14px;
+				a {
+					position: relative;
+					&::before {
+						content: '\25A0';
+						position: absolute;
+						width: 70px;
+						height: 70px;
+						background: transparent;
+						border-radius: 50%;
+						border: 1px solid #ffff00;
+						top: -20px;
+						left: -14px;
+						color: black;
+						text-align: right;
+						line-height: 48px;
+						font-size: 79px;
+						z-index: -1;
+						text-indent: 54px;
+					}
 				}
-				&:hover::before {
+				&:hover a::before {
 					border: 1px solid #fff;
 				}
 			}
@@ -79,7 +93,6 @@
 		.photos {
 			&-person {
 				position: relative;
-				margin-bottom: 48px;
 				img {
 					border-radius: 6px;
 				}
@@ -95,12 +108,11 @@
 	&.portfolio {
 		.slider {
 			.list {
-				margin-bottom: 50px;
 				.item {
 					&-title {
 						font-size: 1.3333rem;
 					}
-				} 
+				}
 			}
 		}
 	}
@@ -108,7 +120,13 @@
 		.wrapper {
 			.category {
 				.link {
-					color:#717171;
+					color: #717171;
+					&:hover {
+						color: #fff;
+					}
+					&::after {
+						background-color: #ba0725;
+					}
 				}
 			}
 			.promo-wrap {
@@ -133,8 +151,181 @@
 							}
 						}
 					}
-				} 
+					.link {
+						margin-top: 128px;
+					}
+				}
 			}
+		}
+	}
+	&.price {
+		.info {
+			.info__text {
+				margin-bottom: 65px;
+			}
+		}
+		.card-list {
+			.card-item {
+				position: relative;
+				//background: radial-gradient(circle at 50% -15px, transparent 79px, #FFFF00 1px, transparent 82px);
+				max-width: 230px;
+				width: 100%;
+				border: 1px solid #ffff00;
+				border-radius: 6px;
+				padding: 100px 6px 40px 6px;
+				margin: 50px 10px;
+				transition: all 0.4s ease-in-out;
+				&::before {
+					content: '';
+					width: 160px;
+					height: 75px;
+					background: black;
+					border-radius: 0 0 160px 160px;
+					top: -2px;
+					position: absolute;
+					border-bottom: 1px solid #ffff00;
+					border-right: 1px solid #ffff00;
+					border-left: 1px solid #ffff00;
+					transition: all 0.5s;
+					left: 0;
+					right: 0;
+					margin: auto;
+				}
+				&:hover {
+					border-color: #ba0725;
+					&::before {
+						border-color: #ba0725;
+					}
+					//background: radial-gradient(circle at 50% -15px, transparent 79px, #BA0725 1px, transparent 82px);
+					.card-price {
+						border-color: #ba0725;
+					}
+					.link {
+						background-color: #ba0725;
+						border-color: #ba0725;
+					}
+				}
+				.circle {
+					position: absolute;
+					background: #fff;
+					border-radius: 130px;
+					width: 130px;
+					height: 130px;
+					top: -73px;
+					left: 0;
+					right: 0;
+					margin: auto;
+					.card-title {
+						position: absolute;
+						font-size: 1.3333rem;
+						top: 0;
+						margin: auto;
+						bottom: 0;
+						line-height: 1.667rem;
+						max-height: max-content;
+						color: #000;
+					}
+				}
+				.card-price {
+					font: 1.3333rem $rg-font-style-regular;
+					border-bottom: 1px solid #ffff00;
+					margin-bottom: 24px;
+					transition: all 0.4s ease-in-out;
+				}
+				.list {
+					margin-bottom: 30px;
+					.item {
+						position: relative;
+						color: #ffffff;
+						margin-left: 25px;
+						font-size: 0.8889rem;
+						&:not(:last-child) {
+							margin-bottom: 12px;
+						}
+						&::before {
+							content: '';
+							position: absolute;
+							background: url('../img/svg/Group.svg');
+							width: 24px;
+							height: 24px;
+							left: -28px;
+							top: -2px;
+						}
+					}
+				}
+				.link {
+					padding: 8px 28px;
+					background-color: #ffff00;
+					border: 2px solid #ffff00;
+					border-radius: 6px;
+					color: #000000;
+					transition: all 0.4s ease-in-out;
+					&:hover {
+						background: transparent;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	&.work {
+		.accordion-wrapper {
+			.accordion {
+				.accordion-item {
+					&:first-of-type {
+						counter-reset: heading;
+					}
+					.accordion-header {
+						.accordion-button {
+							font: 1.3333rem $rg-font-style-light;
+							border-top: 1px solid #717171;
+							border-radius: 0;
+							&::after {
+								position: relative;
+								top: -24px;
+								background-image: none;
+								counter-increment: heading;
+								content: counter(heading);
+								background: none;
+								text-shadow: rgb(113, 113, 113) 1px 0px 0px,
+									rgb(113, 113, 113) 0.540302px 0.841471px 0px,
+									rgb(113, 113, 113) -0.416147px 0.909297px 0px,
+									rgb(113, 113, 113) -0.989992px 0.14112px 0px,
+									rgb(113, 113, 113) -0.653644px -0.756802px 0px,
+									rgb(113, 113, 113) 0.283662px -0.958924px 0px,
+									rgb(113, 113, 113) 0.96017px -0.279415px 0px;
+								font-size: 50px;
+								color: #000;
+							}
+							&:not(.collapsed) {
+								&::after {
+									background-image: none;
+									transform: none;
+									color: #ffff00;
+									text-shadow: none;
+									font-size: 50px;
+								}
+							}
+							&:focus {
+								box-shadow: none;
+							}
+						}
+					}
+				}
+				.accordion-collapse {
+					.accordion-body {
+						font: 1rem $rg-font-style-light;
+					}
+				}
+			}
+		}
+	}
+	&.application {
+		.application-subtitle {
+			font: 1.9444rem $rg-font-style-semi-bold;
+		}
+		.line {
+			margin-top: 50px;
 		}
 	}
 }
