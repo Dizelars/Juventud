@@ -40,22 +40,8 @@
                                         <li class="nav-item">
                                             <a class="nav-link link-decor" href="./redesign.html">Редизайн</a>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link link-decor" href="./contacts.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Контакты</a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                </li>
-                                                <li>
-                                                    <hr class="dropdown-divider"/>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </li>
-                                            </ul>
+                                        <li class="nav-item">
+                                            <a class="nav-link link-decor" href="./contacts.html">Контакты</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -74,8 +60,15 @@
             </div>
         </header>
 
-        <section class="error">
+        <section class="page-error warning">
             <div class="container">
+                <div class="row">
+                    <img src="./assets/img/pages/error/svg/404.svg" alt="404">
+                    <div class="info d-flex flex-column justify-content-center mt-5 mt-md-0">
+                        <p class="text">Извините, страница не найдена или отключена.</p>
+                        <a href="./home.html" class="link">Вернуться на Главную</a>
+                    </div>
+                </div>
                 <div class="line"></div>
             </div>
         </section>
@@ -83,7 +76,7 @@
         <footer class="footer-page footer">
             <div class="container">
                 <div class="d-flex flex-wrap justify-content-start justify-content-sm-around justify-content-xl-between">
-                    <div class="info d-flex flex-column align-items-start order-1 order-xl-0 mt-5 mt-xl-0">
+                    <div class="info d-flex flex-column align-items-start order-1 order-xl-0 mx-4 mx-sm-0 mt-5 mt-xl-0">
                         <div class="logo">
                             <img class="img" src="assets/img/pages/home/svg/logo.svg" alt="logo"/>
                         </div>
@@ -158,7 +151,7 @@
                                 </li>
                         </ul>
                     </div>
-                    <div class="contacts d-flex flex-column align-items-sm-end mt-5 mt-xl-0 order-2 order-xl-0">
+                    <div class="contacts d-flex flex-column align-items-sm-end mx-4 mx-sm-0 mt-5 mt-xl-0 order-2 order-xl-0">
                         <a class="phone" href="tel:84952258118">8 495 225 8118</a>
                         <a class="mail" href="mailto:order@juventud.ru">order@juventud.ru</a>
                         <button class="btn">Заказать дизайн</button>

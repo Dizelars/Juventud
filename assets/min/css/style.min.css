@@ -2254,6 +2254,44 @@ form.search-form button {
 /******************************
 * Портфолио (/portfolio/)
 ******************************/
+.page-portfolio.product .title {
+  font-size: 1.3333rem;
+  padding-bottom: 15px;
+}
+.page-portfolio.product .text {
+  font-size: 0.6667rem;
+  padding-bottom: 38px;
+  color: #979797;
+}
+.page-portfolio.product .slider .promo img {
+  border-radius: 6px;
+}
+.page-portfolio.product .slider .info .figures p {
+  font: 3.1111rem "IBM Plex Sans 500", sans-serif;
+}
+.page-portfolio.product .slider .info .figures p:last-child {
+  font-size: 1.3333rem;
+}
+.page-portfolio.product .slider .info .images img {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 6px;
+}
+.page-portfolio.product .slider .info .counter a:last-child {
+  position: relative;
+  font-size: 1.7778rem;
+  margin-left: 8px;
+}
+.page-portfolio.product .slider .info .counter a:last-child::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 40px;
+  background-color: #fff;
+  top: -12px;
+  left: -5px;
+}
+
 /******************************
 * Цены (/price/)
 ******************************/
@@ -2277,14 +2315,13 @@ form.search-form button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 982px;
   height: 362px;
-  background-color: #fff;
 }
 .page-contacts.addres .wrapper .info {
   padding: 70px;
   max-width: 414px;
   width: 100%;
+  background-color: #fff;
 }
 .page-contacts.addres .wrapper .info .link {
   margin-left: 70px;
@@ -2315,15 +2352,44 @@ form.search-form button {
   margin-right: 30px;
 }
 .page-contacts.addres .wrapper .map {
-  width: 100%;
+  display: inline-block;
+  max-width: 100%;
 }
 
 /******************************
 * Редизайн (/redesign/)
 ******************************/
+.page-redesign.content .text {
+  max-width: 424px;
+  width: 100%;
+  margin: 0 auto;
+}
+.page-redesign.content .content__text {
+  max-width: 350px;
+  width: 100%;
+}
+
 /******************************
 * 404 (/error/)
 ******************************/
+.page-error.warning img {
+  margin-left: auto;
+  max-width: 480px;
+  width: 100%;
+}
+.page-error.warning .info {
+  position: relative;
+  max-width: 406px;
+}
+.page-error.warning .info p {
+  font: 1.3333rem "IBM Plex Sans 400", sans-serif;
+}
+.page-error.warning .info a {
+  font-family: "IBM Plex Sans 400", sans-serif;
+  position: absolute;
+  bottom: 100px;
+  text-decoration: underline;
+}
 /*!*******************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./css/mobile.scss ***!
   \*******************************************************************************************************************************************************/
@@ -2351,6 +2417,13 @@ form.search-form button {
   }
   .page-home.team .info .text {
     margin-bottom: 40px;
+  }
+
+  .page-portfolio.product .slider .info .figures p {
+    font-size: 1.9rem;
+  }
+  .page-portfolio.product .slider .info .figures p:last-child {
+    font-size: 1rem;
   }
 
   .footer-page.footer .info {
@@ -2440,6 +2513,9 @@ h2 {
     font-size: 1.2rem;
   }
 
+  .page-about.preview .preview__title {
+    font: 6rem "IBM Plex Sans 700", sans-serif;
+  }
   .page-about.departments {
     margin-bottom: 20px;
   }
@@ -2448,6 +2524,19 @@ h2 {
     position: static;
     top: 0;
     left: 0;
+  }
+
+  .page-contacts.addres .wrapper {
+    top: 25%;
+    transform: translate(-50%, -40%);
+  }
+  .page-contacts.addres .wrapper .info {
+    max-width: none;
+    width: 100%;
+  }
+
+  .page-error.warning img {
+    margin: 0 auto;
   }
 
   .footer-page.footer .links .list {
@@ -2533,8 +2622,16 @@ h2 {
     text-indent: 32px;
   }
 
+  .page-about.preview .preview__title {
+    font: 4.4rem "IBM Plex Sans 700", sans-serif;
+  }
   .page-about.description h2 {
     font-size: 1.9rem;
+  }
+
+  .footer-page.footer .links .list {
+    margin-left: 7px;
+    margin-right: 7px;
   }
 
   #demo .item {
@@ -2607,7 +2704,15 @@ h2 {
   }
 
   .page-about.preview .preview__title {
-    font-size: 5.1rem;
+    font-size: 2.4rem;
+  }
+
+  .footer-page.footer .info {
+    max-width: 196px;
+  }
+  .footer-page.footer .links .list {
+    max-width: 234px;
+    width: 100%;
   }
 
   #tariffs .tariffs-container .item p.price {

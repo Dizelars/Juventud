@@ -458,6 +458,61 @@
 /******************************
 * Портфолио (/portfolio/)
 ******************************/
+.page-portfolio {
+	&.product {
+		.title {
+			font-size: 1.3333rem;
+			padding-bottom: 15px;
+		}
+		.text {
+			font-size: 0.6667rem;
+			padding-bottom: 38px;
+			color: #979797;
+		}
+		.slider {
+			.promo {
+				img {
+					border-radius: 6px;
+				}
+			}
+			.info {
+				.figures {
+					p {
+						font: 3.1111rem $rg-font-style-regular;
+						&:last-child {
+							font-size: 1.3333rem;
+						}
+					}
+				}
+				.images {
+					img {
+						max-width: 200px;
+						width: 100%;
+						border-radius: 6px;
+					}
+				}
+				.counter {
+					a {
+						&:last-child {
+							position: relative;
+							font-size: 1.7778rem;
+							margin-left: 8px;
+							&::before {
+								position: absolute;
+								content: '';
+								width: 2px;
+								height: 40px;
+								background-color: #fff;
+								top: -12px;
+								left: -5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 /******************************
 * Цены (/price/)
@@ -486,13 +541,12 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			width: 982px;
 			height: 362px;
-			background-color: #fff;
 			.info {
 				padding: 70px;
 				max-width: 414px;
 				width: 100%;
+				background-color: #fff;
 				.link {
 					margin-left: 70px;
 					position: relative;
@@ -531,7 +585,8 @@
 				}
 			}
 			.map {
-				width: 100%;
+				display: inline-block;
+				max-width: 100%;
 			}
 		}
 	}
@@ -540,9 +595,42 @@
 /******************************
 * Редизайн (/redesign/)
 ******************************/
-
+.page-redesign {
+	&.content {
+		.text {
+			max-width: 424px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.content__text {
+			max-width: 350px;
+			width: 100%;
+		}
+	}
+}
 
 /******************************
 * 404 (/error/)
 ******************************/
-
+.page-error {
+	&.warning {
+		img {
+			margin-left: auto;
+			max-width: 480px;
+			width: 100%;
+		}
+		.info {
+			position: relative;
+			max-width: 406px;
+			p {
+				font: 1.3333rem $rg-font-style-light;
+			}
+			a {
+				font-family: $rg-font-style-light;
+				position: absolute;
+				bottom: 100px;
+				text-decoration: underline;
+			}
+		}
+	}
+}

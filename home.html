@@ -39,23 +39,9 @@
 										<li class="nav-item">
 											<a class="nav-link link-decor" href="./redesign.html">Редизайн</a>
 										</li>
-										<li class="nav-item dropdown">
-											<a class="nav-link link-decor" href="./contacts.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Контакты</a>
-											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li>
-													<a class="dropdown-item" href="#">Action</a>
-												</li>
-												<li>
-													<a class="dropdown-item" href="#">Another action</a>
-												</li>
-												<li>
-													<hr class="dropdown-divider"/>
-												</li>
-												<li>
-													<a class="dropdown-item" href="#">Something else here</a>
-												</li>
-											</ul>
-										</li>
+										<li class="nav-item">
+                                            <a class="nav-link link-decor" href="./contacts.html">Контакты</a>
+                                        </li>
 									</ul>
 								</div>
 							</div>
@@ -88,12 +74,12 @@
 							class="items d-sm-flex flex-md-wrap justify-content-sm-around justify-content-md-start align-items-center">
 							<div class="item me-0 me-sm-3 mb-xl-0 mb-3 mb-sm-0 mb-md-3 mb-lg-0">
 								<p class="mb-0">
-									<a class="btn px-mb-4 px-sm-1 py-sm-1 px-md-4 py-md-2" href="">Узнать стоимость</a>
+									<a class="btn px-mb-4 px-sm-1 py-sm-1 px-md-4 py-md-2" data-bs-toggle="modal" data-bs-target="#application" href="">Узнать стоимость</a>
 								</p>
 							</div>
 							<div class="item">
 								<p class="mb-0">
-									<a class="btn transparent px-mb-4 px-sm-1 py-sm-1 px-md-4 py-md-2" data-where="" href="javascript:;">Заказать редизайн</a>
+									<a class="btn transparent px-mb-4 px-sm-1 py-sm-1 px-md-4 py-md-2" data-bs-toggle="modal" data-bs-target="#application" href="javascript:;">Заказать редизайн</a>
 								</p>
 							</div>
 						</div>
@@ -302,7 +288,7 @@
 								<li class="item">SSL-сертификат</li>
 								<li class="item">Базовое обучение CMS</li>
 							</ul>
-							<a class="link" href="#">Заказать</a>
+							<a class="link" href="#" data-bs-toggle="modal" data-bs-target="#application">Заказать</a>
 						</li>
 						<li class="card-item col-2 text-center">
 							<div class="circle">
@@ -321,7 +307,7 @@
 								<li class="item">SSL-сертификат</li>
 								<li class="item">Базовое обучение CMS</li>
 							</ul>
-							<a class="link" href="#">Заказать</a>
+							<a class="link" href="#" data-bs-toggle="modal" data-bs-target="#application">Заказать</a>
 						</li>
 						<li class="card-item col-2 text-center">
 							<div class="circle">
@@ -340,7 +326,7 @@
 								<li class="item">SSL-сертификат</li>
 								<li class="item">Базовое обучение CMS</li>
 							</ul>
-							<a class="link" href="#">Заказать</a>
+							<a class="link" href="#" data-bs-toggle="modal" data-bs-target="#application">Заказать</a>
 						</li>
 						<li class="card-item col-2 text-center">
 							<div class="circle">
@@ -359,7 +345,7 @@
 								<li class="item">SSL-сертификат</li>
 								<li class="item">Базовое обучение CMS</li>
 							</ul>
-							<a class="link" href="#">Заказать</a>
+							<a class="link" href="#" data-bs-toggle="modal" data-bs-target="#application">Заказать</a>
 						</li>
 						<li class="card-item col-2 text-center">
 							<div class="circle">
@@ -378,7 +364,7 @@
 								<li class="item">SSL-сертификат</li>
 								<li class="item">Базовое обучение CMS</li>
 							</ul>
-							<a class="link" href="#">Заказать</a>
+							<a class="link" href="#" data-bs-toggle="modal" data-bs-target="#application">Заказать</a>
 						</li>
 					</ul>
 				</div>
@@ -547,7 +533,7 @@
 		<footer class="footer-page footer">
 			<div class="container">
 				<div class="d-flex flex-wrap justify-content-start justify-content-sm-around justify-content-xl-between">
-					<div class="info d-flex flex-column align-items-start order-1 order-xl-0 mt-5 mt-xl-0">
+					<div class="info d-flex flex-column align-items-start order-1 order-xl-0 mx-4 mx-sm-0 mt-5 mt-xl-0">
 						<div class="logo">
 							<img class="img" src="assets/img/pages/home/svg/logo.svg" alt="logo"/>
 						</div>
@@ -622,7 +608,7 @@
 								</li>
 						</ul>
 					</div>
-					<div class="contacts d-flex flex-column align-items-sm-end mt-5 mt-xl-0 order-2 order-xl-0">
+					<div class="contacts d-flex flex-column align-items-sm-end mx-4 mx-sm-0 mt-5 mt-xl-0 order-2 order-xl-0">
 						<a class="phone" href="tel:84952258118">8 495 225 8118</a>
 						<a class="mail" href="mailto:order@juventud.ru">order@juventud.ru</a>
 						<button class="btn">Заказать дизайн</button>
